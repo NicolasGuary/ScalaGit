@@ -1,29 +1,33 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/SGit/target/scala-2.13/sgit_2.13-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/sgit_2.13-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/IOManager$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/IOManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/IOManager$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/IOManager.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/IOManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/IOManager.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt/ScoptParser$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt/ScoptParser$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt/ScoptParser$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt/Config$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt/Config$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt/Config$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt/Config.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt/Config.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt/Config.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt/ScoptParser.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt/ScoptParser.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt/ScoptParser.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/scopt/ScoptParser$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/utils/scopt/ScoptParser$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils/scopt/ScoptParser$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	actions[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/actions[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/actions[0m
+[0m[[0m[0mdebug[0m] [0m[0m	actions/Add$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/actions/Add$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	actions/Init$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/actions/Init$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/actions/Init$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	actions/Add.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/actions/Add.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	actions/Init.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/SGit/target/scala-2.13/classes/actions/Init.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/actions/Init.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

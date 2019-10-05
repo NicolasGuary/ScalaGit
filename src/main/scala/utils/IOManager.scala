@@ -3,6 +3,8 @@ package utils
 import java.io.{BufferedWriter, File, FileWriter}
 import java.nio.file.{Files, Paths}
 
+import scala.annotation.tailrec
+
 
 // This is an utility class for writing and managing files and directories
 object IOManager {
@@ -41,4 +43,47 @@ object IOManager {
   def fileExists(path: String): Boolean ={
     Files.exists(Paths.get(path))
   }
+
+  //Returns all the files found in the current directory described by path
+  //Returns an empty list if no elements found
+  //TODO - Maybe check if the path exists first
+  def getAllFilesFromCurrentDirectory(path: String): List[File] = {
+    val d = new File(path)
+    if (d.exists && d.isDirectory) {
+      d.listFiles.filter(_.isFile).toList
+    } else {
+      List[File]()
+    }
+  }
+
+  //Returns all the directories found in the current directory described by path
+  //Returns an empty list if no elements found
+  //TODO - Maybe check if the path exists first
+  def getAllDirectoriesFromCurrentDirectory(path: String): List[File] = {
+    val d = new File(path)
+    if (d.exists && d.isDirectory) {
+      d.listFiles.filter(_.isDirectory).toList
+    } else {
+      List[File]()
+    }
+  }
+
+  //Returns everything at root of the path. Does not explore the folders (not recursive)
+  //Returns an empty list if no elements found
+  def getAllFromCurrentDirectory(path: String): List[File] = {
+    val d = new File(path)
+    if (d.exists && d.isDirectory) {
+      d.listFiles.toList
+    } else {
+      List[File]()
+    }
+  }
+
+  //Returns true if the path contains a directory and false otherwise
+  def containsDirectory(path: File): Boolean= {
+    path.exists && path.isDirectory
+  }
+
+// TODO - Method that explores all the folder from the path in argument. It should also omit .sgit folder so it doesn't add them to the repo.
+  def exploreDirectory(path: String){}
 }

@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/IdeaProjects/SGit/
+cd ~/IdeaProjects/ScalaGit/
 sbt --error 'set showSuccess := false' "run $*"

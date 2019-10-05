@@ -4,8 +4,6 @@ import java.io.File
 
 import utils.IOManager
 
-case class Init()
-
 object Init{
 
   //Initialize a new .sgit directory at the current location

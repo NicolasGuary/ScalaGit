@@ -2,7 +2,7 @@ package utils.scopt
 
 import java.io.File
 
-import actions.Init
+import actions.{Add, Init}
 import scopt.OParser
 
 // Config stores arguments for the commands inputed
@@ -121,7 +121,7 @@ object ScoptParser extends App {
           Init.init()
         }
         case "add" => {
-          println(s"add with argument ${args(0)}")
+          Add.add(args.drop(1).mkString(" "))
         }
         case _ => {
           println(s"config reçue =  ${config} avec ${args}")
