@@ -2,6 +2,16 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	objects[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/objects[0m
+[0m[[0m[0mdebug[0m] [0m[0m	objects/Tree$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/objects/Tree$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	objects/Blob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/objects/Blob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	objects/Blob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/objects/Blob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	objects/Tree.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/objects/Tree.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/ScalaGit/target/scala-2.13/classes/utils[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/IOManager$.class[0m

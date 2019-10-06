@@ -113,7 +113,8 @@ object ScoptParser extends App {
   // OParser.parse returns Option[Config] => we need to check if we received Some(config) or None
   // Then we need to call the method corresponding to the arguments received
   // TODO - check if there is a better way to handle the commands
-  //TODO - Create a method to parse the args received from the config.
+  // TODO - Create a method to parse the args received from the config.
+  // TODO - Check if the .sgit directory exists before doing any command other that init !
   OParser.parse(parser, args, Config()) match {
     case Some(config) => {
       config.command match {
@@ -124,6 +125,7 @@ object ScoptParser extends App {
           Add.add(args.drop(1).mkString(" "))
         }
         case _ => {
+          //Check if .sgit exists, if yes do the command, else throw an error because it's not an sgit repo
           println(s"config reçue =  ${config} avec ${args}")
         }
       }

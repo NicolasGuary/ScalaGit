@@ -1,7 +1,6 @@
 package actions
 
 import objects.Blob
-import objects.Tree
 import utils.IOManager
 
 object Add {
@@ -9,15 +8,20 @@ object Add {
   def add(path: String): Unit = {
 
     println(s"Adding all files from ${path}")
-    println("Here are all the files from the current path:")
 
+    println("Here are all the files from the current path:")
     val elements = IOManager.getAllFilesFromCurrentDirectory(path)
-    elements.map(x => println(x))
     elements.map(x => Blob.convertToBlob(x))
 
+   /* println("Here are all the directories from the current path:")
     val dirs = IOManager.getAllDirectoriesFromCurrentDirectory(path)
     dirs.map(x => println(x))
-    dirs.map(x => Tree.convertToTree(x))
+
+
+    println("Trying to explore dir")
+    val directories = IOManager.getAllDirectoriesFromCurrentDirectory(path)
+    directories.map( di => IOManager.exploreDirectory(di))
+    */
 
   }
 

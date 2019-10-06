@@ -1,8 +1,11 @@
 package utils
 
 import java.io.{BufferedWriter, File, FileWriter}
+import java.math.BigInteger
 import java.nio.file.{Files, Paths}
+import java.security.MessageDigest
 
+import scala.io.Source
 import scala.annotation.tailrec
 
 
@@ -40,9 +43,14 @@ object IOManager {
     bw.close()
   }
 
+def readFile(file: File): String = {
+  new String(Files.readAllBytes(Paths.get(file.getAbsolutePath)))
+}
+
   def fileExists(path: String): Boolean ={
     Files.exists(Paths.get(path))
   }
+
 
   //Returns all the files found in the current directory described by path
   //Returns an empty list if no elements found
@@ -85,5 +93,18 @@ object IOManager {
   }
 
 // TODO - Method that explores all the folder from the path in argument. It should also omit .sgit folder so it doesn't add them to the repo.
-  def exploreDirectory(path: String){}
+  def exploreDirectory(d: File): Unit ={
+    if(containsDirectory(d)){
+      getAllFromCurrentDirectory(d.getAbsolutePath).map(file => if(file.isFile){
+        println(file.getName)
+      } else {
+        exploreDirectory(file)
+        println(file.getName)
+      })
+    }
+  }
+
+  def hash(s: String): String = {
+    String.format("%032x", new BigInteger(1, MessageDigest.getInstance("SHA-256").digest((s).getBytes("UTF-8"))))
+  }
 }
