@@ -1,24 +1,26 @@
 package actions
 
+import java.io.File
 import objects.Blob
 import objects.Tree
-import utils.IOManager
 
 object Add {
 
   def add(path: String): Unit = {
+    path.split(" ").map(x =>addChild(x, None))
+  }
 
-    println(s"Adding all files from ${path}")
-    println("Here are all the files from the current path:")
+  def addChild(path: String, parent: Option[Tree]): Unit = {
 
-    val elements = IOManager.getAllFilesFromCurrentDirectory(path)
-    elements.map(x => println(x))
-    elements.map(x => Blob.convertToBlob(x))
+    val file = new File(path)
 
-    val dirs = IOManager.getAllDirectoriesFromCurrentDirectory(path)
-    dirs.map(x => println(x))
-    dirs.map(x => Tree.convertToTree(x))
-
+    if(file.isDirectory){
+      Tree.convertToTree(file, parent)
+    } else if (file.isFile) {
+      Blob.convertToBlob(file, parent)
+    } else {
+      println("Unknown type")
+    }
   }
 
 }

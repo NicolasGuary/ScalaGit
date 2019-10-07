@@ -16,7 +16,7 @@ object Init{
       s".sgit${File.separator}objects${File.separator}tree",
       s".sgit${File.separator}objects${File.separator}commit",
       s".sgit${File.separator}refs${File.separator}heads",
-      s".sgit${File.separator}objects${File.separator}tags",
+      s".sgit${File.separator}refs${File.separator}tags",
     )
 
     val listOfFiles: List[String] = List(
