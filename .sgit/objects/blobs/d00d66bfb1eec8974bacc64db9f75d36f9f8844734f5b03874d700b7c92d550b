@@ -41,6 +41,14 @@ object IOManager {
     bw.close()
   }
 
+  //Add the content of s into filename
+  def overwriteFile(filename: String, s: String): Unit = {
+    val file = new File(filename)
+    val bw = new BufferedWriter(new FileWriter(file, true))
+    bw.write(s)
+    bw.close()
+  }
+
 def readFile(file: File): String = {
   new String(Files.readAllBytes(Paths.get(file.getAbsolutePath)))
 }

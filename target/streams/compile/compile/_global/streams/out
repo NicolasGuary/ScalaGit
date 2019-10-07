@@ -1,10 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/ScalaGit/src/main/scala/objects/Tree.scala:23:16: not enough arguments for constructor Tree: (items: List[(String, String)], id: String)objects.Tree.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters items, id.[0m
-[0m[[0m[31merror[0m] [0m[0m    val tree = new Tree()[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/ScalaGit/src/main/scala/objects/Tree.scala:25:14: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : List[Unit][0m
-[0m[[0m[31merror[0m] [0m[0m required: Option[objects.Tree][0m
-[0m[[0m[31merror[0m] [0m[0m    files.map(x => Add.addChild(x.getAbsolutePath, tree))[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were two deprecation warnings (since 2.13.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

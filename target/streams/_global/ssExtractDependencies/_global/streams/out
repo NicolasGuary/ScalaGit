@@ -1,13 +1,8 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading org.scalactic:scalactic_2.13:3.0.5
+[error] sbt.librarymanagement.ResolveException: Error downloading com.github.pathikrit:better-files_2.13:3.0.8
 [error]   Not found
 [error]   Not found
-[error]   not found: /Users/Nico/.ivy2/local/org.scalactic/scalactic_2.13/3.0.5/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.0.5/scalactic_2.13-3.0.5.pom
-[error] Error downloading org.scalatest:scalatest_2.13:3.0.5
-[error]   Not found
-[error]   Not found
-[error]   not found: /Users/Nico/.ivy2/local/org.scalatest/scalatest_2.13/3.0.5/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
+[error]   not found: /Users/Nico/.ivy2/local/com.github.pathikrit/better-files_2.13/3.0.8/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/pathikrit/better-files_2.13/3.0.8/better-files_2.13-3.0.8.pom
 [error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
 [error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
 [error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
@@ -38,13 +33,8 @@
 [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 [error] 	at java.lang.Thread.run(Thread.java:748)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading org.scalactic:scalactic_2.13:3.0.5
+[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.github.pathikrit:better-files_2.13:3.0.8
 [error]   Not found
 [error]   Not found
-[error]   not found: /Users/Nico/.ivy2/local/org.scalactic/scalactic_2.13/3.0.5/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.0.5/scalactic_2.13-3.0.5.pom
-[error] Error downloading org.scalatest:scalatest_2.13:3.0.5
-[error]   Not found
-[error]   Not found
-[error]   not found: /Users/Nico/.ivy2/local/org.scalatest/scalatest_2.13/3.0.5/ivys/ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.0.5/scalatest_2.13-3.0.5.pom
+[error]   not found: /Users/Nico/.ivy2/local/com.github.pathikrit/better-files_2.13/3.0.8/ivys/ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/com/github/pathikrit/better-files_2.13/3.0.8/better-files_2.13-3.0.8.pom

@@ -2,7 +2,7 @@ package utils.scopt
 
 import java.io.File
 
-import actions.{Add, Init}
+import actions.{Add, Commit, Init}
 import scopt.OParser
 
 // Config stores arguments for the commands inputed
@@ -123,6 +123,9 @@ object ScoptParser extends App {
         }
         case "add" => {
           Add.add(args.drop(1).mkString(" "))
+        }
+        case "commit" => {
+          Commit.commit()
         }
         case _ => {
           //Check if .sgit exists, if yes do the command, else throw an error because it's not an sgit repo
