@@ -1,8 +1,8 @@
 [0m[[0m[31merror[0m] [0m[0mjava.util.NoSuchElementException: None.get[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.None$.get(Option.scala:627)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.None$.get(Option.scala:626)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.addTrees(Commit.scala:22)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.commit(Commit.scala:13)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.addTrees(Commit.scala:51)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.commit(Commit.scala:20)[0m
 [0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.delayedEndpoint$utils$scopt$ScoptParser$1(ScoptParser.scala:128)[0m
 [0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$delayedInit$body.apply(ScoptParser.scala:22)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m

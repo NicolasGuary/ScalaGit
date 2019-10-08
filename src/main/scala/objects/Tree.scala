@@ -1,21 +1,26 @@
 package objects
 
 import java.io.File
-
 import utils.IOManager
 
-case class Tree(var items: List[(String, String, String)] = List(), var id: String = "") {
+/*
+* This class defines an object Tree that is saved on the .sgit/objects/tree folder
+* items: a list of entries to write in the tree file, corresponding to its child Blob(s) and/or Tree(s)
+* id: the hashed value of the content of the tree, used to identify the Tree
+ */
 
-  def addElement(typeElem: String, id: String, filename: String): List[(String, String, String)] = {
-    (typeElem, id, filename) :: this.get_items()
+
+case class Tree(var items: List[Entry] = List(), var id: String = "") {
+
+  def addElement(items: Entry): List[Entry] = {
+    new Entry(items.get_content_type(), items.get_hash(), items.get_filepath()) :: this.get_items()
   }
 
-  def get_items(): List[(String, String, String)] = {
+  def get_items(): List[Entry] = {
     this.items
   }
 
-
-  def set_items (items: List[(String, String, String)]): Unit = {
+  def set_items (items: List[Entry]): Unit = {
     this.items = items
   }
 
@@ -27,18 +32,18 @@ case class Tree(var items: List[(String, String, String)] = List(), var id: Stri
     this.id = id
   }
 
-  def saveTreeFile(id: String, items: List[(String, String, String)]): Unit = {
+  def saveTreeFile(id: String, items: List[Entry]): Unit = {
     IOManager.overwriteFile(s".sgit${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
   }
 
-  def createTreeId(items: List[(String, String, String)]): String = {
+  def createTreeId(items: List[Entry]): String = {
     val content = treeContent(items)
     IOManager.hash(content)
   }
 
-  def treeContent(items: List[(String, String, String)]): String = {
+  def treeContent(items: List[Entry]): String = {
     var acc = ""
-    items.map(x => acc = acc + x._1 + " " + x._2 +" "+ x._3 + "\n")
+    items.map(x => acc = acc + x.get_content_type() + " " + x.get_hash()+ " "+ x.getFileName() + "\n")
     acc
   }
 }
@@ -49,15 +54,13 @@ object Tree {
     new Tree
   }
 
-  //Converts the current file into a Tree object if it's a folder.
-  //It should point to any item it contains and indicate if it's a Tree or a Blob.
-  // The id of the tree is the hash of all it's content after it is listed
-  // The id of a subtree is the hash of all it's content
-
-  //def convertToTree(file: File, parent: Option[Tree]): Option[Tree] = {
-  //}
-
-
-
-
+  //Creates a new tree with a list of elements for the deepest path and save it in .sgit/object/tree
+  def createTree(deeper: List[Entry]): String = {
+    val tree = new Tree()
+    deeper.map(element => tree.set_items(tree.addElement(element)))
+    val hash = tree.createTreeId(tree.get_items())
+    tree.set_id(hash)
+    tree.saveTreeFile(tree.get_id(), tree.get_items())
+    tree.get_id()
+  }
 }
