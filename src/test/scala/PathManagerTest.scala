@@ -10,7 +10,7 @@ class PathManagerTest extends FunSpec with Matchers with GivenWhenThen with Befo
       val c = new Entry("tree", "1c", "testing/b/c")
 
       val dirs = List(a,b,c)
-      assert(PathManager.getDeeperDirectory(dirs)._1.equals(List(c)))
+      assert(PathManager.getDeepestDirectory(dirs)._1.equals(List(c)))
     }
   }
 

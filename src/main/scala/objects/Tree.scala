@@ -54,10 +54,10 @@ object Tree {
     new Tree
   }
 
-  //Creates a new tree with a list of elements for the deepest path and save it in .sgit/object/tree
-  def createTree(deeper: List[Entry]): String = {
+  //Creates a new tree with a list of entries and save it in .sgit/object/tree
+  def createTree(entries: List[Entry]): String = {
     val tree = new Tree()
-    deeper.map(element => tree.set_items(tree.addElement(element)))
+    entries.map(element => tree.set_items(tree.addElement(element)))
     val hash = tree.createTreeId(tree.get_items())
     tree.set_id(hash)
     tree.saveTreeFile(tree.get_id(), tree.get_items())

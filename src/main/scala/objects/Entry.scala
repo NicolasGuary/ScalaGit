@@ -51,9 +51,7 @@ case class Entry (var content_type: String = "", var hash: String = "", var file
     } else {
       this.filepath
     }
-
   }
-
 }
 
 object Entry {

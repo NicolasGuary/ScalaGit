@@ -12,6 +12,8 @@ import scala.annotation.tailrec
 * It reads the STAGE and uses its content to build the corresponding Tree hierarchy.
  */
 
+//TODO - Blob in tree OK but for the Tree the name is the name of the current Entry and not the child tree contained.
+
 object Commit {
 
   def commit(): Unit = {
@@ -28,7 +30,6 @@ object Commit {
 
   //Creates the commit tree from the lists for trees and blobs containing their entries
   //Returns the entry generated for the commit tree
-
   def generateCommitTree(result: List[Entry], root_blob: List[Entry]): List[Entry] = {
     val tree = new Tree()
     //trees.map(element => tree.set_items(tree.addElement(element)))
@@ -47,18 +48,15 @@ object Commit {
     if(l.isEmpty){
       hashFinal
     } else {
-      val (deeper, rest, path_max) = PathManager.getDeeperDirectory(l)
-      val hash = Tree.createTree(deeper)
+      val (deepest, rest, path_max) = PathManager.getDeepestDirectory(l)
+      val hash = Tree.createTree(deepest)
       if(PathManager.getParentPath(path_max).isEmpty) {
         if (hashFinal.isEmpty){
-          println(s"hashfinal est-il vide? ${hashFinal.isEmpty} et hashfinal = {hashFinal.get.map(x=> x.getFileName())}")
           addTrees(rest, List(new Entry("tree" ,hash, path_max)))
         } else {
-          println(s"hashfinal est-il vide? ${hashFinal.isEmpty} et hashfinal = ${hashFinal.map(x=> x.getFileName())}")
           addTrees(rest, new Entry("tree" ,hash, path_max) :: hashFinal)
         }
       } else {
-        println(new Entry("tree", hash, PathManager.getParentPath(path_max).get) :: rest)
         addTrees(new Entry("tree", hash, PathManager.getParentPath(path_max).get) :: rest, hashFinal)
       }
     }

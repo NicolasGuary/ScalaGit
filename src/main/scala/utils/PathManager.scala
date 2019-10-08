@@ -27,8 +27,6 @@ object PathManager {
     }
   }
 
-
-  //  TODO - do not return parentPath because it can be computed from the max
   //Returns the longest path
   //If there are more than 1, it returns the first one found
   //returns:
@@ -36,16 +34,16 @@ object PathManager {
   //  rest: all the others Entries that are not in deepest (either same size but different or shorter)
   //  pathForMax: the maximum path found
 
-  def getDeeperDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
+  def getDeepestDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
     var max = 0
     var pathForMax = ""
-    l.map(line => if (line.get_filepath().split("/").size >= max) {
-      max = line.get_filepath().split("/").size
-      pathForMax = line.get_filepath()
+    l.map(line => if (line.getFileDirectoryPath().split("/").size >= max) {
+      max = line.getFileDirectoryPath().split("/").size
+      pathForMax = line.getFileDirectoryPath()
     })
 
-    val rest = l.filter(x => !(x.get_filepath().equals(pathForMax)))
-    val deepest = l.filter(x => x.get_filepath().equals(pathForMax))
+    val rest = l.filter(x => !x.getFileDirectoryPath().equals(pathForMax))
+    val deepest = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
 
     (deepest, rest, pathForMax)
   }

@@ -20,6 +20,15 @@ class EntryTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
     }
   }
 
+  describe("If you try to get the file name for testing/b/c") {
+    it("you should get c") {
+      val entry = new Entry("blob", "1c", "testing/b/c")
+      println(entry.getFileName())
+      assert(entry.getFileName().equals("c"))
+    }
+  }
+
+
   describe("If you try to get the file path for b/c/file_in_c.txt") {
     it("you should get b/c") {
       val entry = new Entry("blob", "1c", "testing/b/c/file_in_c.txt")

@@ -46,7 +46,6 @@ object Stage {
   // Only for the files that are at root of the project
   // Will be used to create the commit tree, because it needs to point to these blobs
   def retrieveStageRootBlobs(): List[Entry] = {
-
     val stage = new File(s".sgit${File.separator}STAGE")
     val files = IOManager.readFile(stage)
 

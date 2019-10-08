@@ -1,6 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/ScalaGit/src/main/scala/actions/Commit.scala:22:37: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : None.type[0m
-[0m[[0m[31merror[0m] [0m[0m required: List[objects.Entry][0m
-[0m[[0m[31merror[0m] [0m[0m    val result = addTrees(non_root, None)[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were four deprecation warnings (since 2.13.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
