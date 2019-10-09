@@ -1,9 +1,12 @@
 package actions
 
+import java.io.File
+import java.util.{Calendar, Date}
+
 import objects.Entry
 import objects.Tree
 import objects.Stage
-import utils.PathManager
+import utils.{IOManager, PathManager}
 
 import scala.annotation.tailrec
 
@@ -12,32 +15,114 @@ import scala.annotation.tailrec
 * It reads the STAGE and uses its content to build the corresponding Tree hierarchy.
  */
 
-//TODO - Blob in tree OK but for the Tree the name is the name of the current Entry and not the child tree contained.
+case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var parent_commit_id: String ="", var author: String = "NicolasGuary", var timestamp: Date = new Date()) {
 
+  def get_id(): String = {
+    this.id
+  }
+
+  def set_id (id: String): Unit = {
+    this.id = id
+  }
+
+  def get_master_tree(): Tree = {
+    this.master_tree
+  }
+
+  def set_master_tree (master_tree: Tree): Unit = {
+    this.master_tree = master_tree
+  }
+
+  def get_parent_commit_id(): String = {
+    this.parent_commit_id
+  }
+
+  def set_parent_commit_id (parent_commit_id: String): Unit = {
+    this.parent_commit_id = parent_commit_id
+  }
+
+  def get_author(): String = {
+    this.author
+  }
+
+  def set_author (author: String): Unit = {
+    this.author = author
+  }
+
+  def get_timestamp(): Date = {
+    this.timestamp
+  }
+
+  def set_timestamp(timestamp: Date): Unit = {
+    this.timestamp = timestamp
+  }
+
+  //Returns the content of the Commit that should get hashed to get the new Commit id
+  def commitContent(): String = {
+    s"tree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}"
+  }
+
+  def commitContentForLog(): String = {
+    s"commit ${this.get_id()}\ntree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}"
+  }
+
+  def save(): Unit = {
+    IOManager.overwriteFile(s".sgit${File.separator}objects${File.separator}commit${File.separator}${this.get_id()}" , commitContent())
+  }
+
+  def set_current_commit(): Unit = {
+    IOManager.writeFile(s".sgit${File.separator}refs${File.separator}heads${File.separator}master", this.get_id())
+  }
+
+  def record_in_logs(): Unit = {
+    IOManager.overwriteFile(s".sgit${File.separator}LOGS", this.commitContentForLog())
+  }
+}
+
+//TODO - Blob in tree OK but for the Tree the name is the name of the current Entry and not the child tree contained.
 object Commit {
+  def apply(): Commit = {
+    new Commit
+  }
 
   def commit(): Unit = {
-
     val root_blobs = Stage.retrieveStageRootBlobs()
-    val stage = Stage.retrieveStageStatus()
-    val non_root = stage.filter(x => !root_blobs.contains(x))
+    val stage = Stage.getStageAsEntries()
+
+    val non_root = stage.get_entries().filter(x => !root_blobs.contains(x))
     val result = addTrees(non_root, List())
 
-    //generateCommitTree(result, root_blobs)
+    val master_tree = generateCommitTree(result, root_blobs)
+    val new_commit = generateCommit(master_tree)
 
+    //Everything in the stage has been commit, we can now clear the stage.
+    Stage.clear()
+  }
 
+//TODO - master should be replaced by Branch.getCurrent()
+  def generateCommit(master_tree: Tree): Commit = {
+    val new_commit = new Commit()
+    val parent_commit_id = IOManager.readFile(new File(s".sgit${File.separator}refs${File.separator}heads${File.separator}master"))
+    val timestamp = Calendar.getInstance().getTime()
+    new_commit.set_parent_commit_id(parent_commit_id)
+    new_commit.set_timestamp(timestamp)
+    new_commit.set_master_tree(master_tree)
+    val id = IOManager.hash(new_commit.commitContent())
+    new_commit.set_id(id)
+
+    // save into objects/commit
+    new_commit.save()
+    //change the ref in refs/heads/master
+    new_commit.set_current_commit()
+    //record the commit in the logs
+    new_commit.record_in_logs()
+    new_commit
   }
 
   //Creates the commit tree from the lists for trees and blobs containing their entries
-  //Returns the entry generated for the commit tree
-  def generateCommitTree(result: List[Entry], root_blob: List[Entry]): List[Entry] = {
-    val tree = new Tree()
-    //trees.map(element => tree.set_items(tree.addElement(element)))
-    val hash = tree.createTreeId(tree.get_items())
-    tree.set_id(hash)
-    tree.saveTreeFile(tree.get_id(), tree.get_items())
-    tree.get_id()
-    tree.get_items()
+  //Returns the Tree generated for the commit tree
+  def generateCommitTree(result: List[Entry], root_blobs: List[Entry]): Tree = {
+    Tree.createTree(result ::: root_blobs)
   }
 
   //Browse all the paths received and builds the tree objects from it
@@ -49,7 +134,7 @@ object Commit {
       hashFinal
     } else {
       val (deepest, rest, path_max) = PathManager.getDeepestDirectory(l)
-      val hash = Tree.createTree(deepest)
+      val hash = Tree.createTree(deepest).get_id()
       if(PathManager.getParentPath(path_max).isEmpty) {
         if (hashFinal.isEmpty){
           addTrees(rest, List(new Entry("tree" ,hash, path_max)))

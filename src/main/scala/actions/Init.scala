@@ -16,12 +16,14 @@ object Init{
       s".sgit${File.separator}objects${File.separator}tree",
       s".sgit${File.separator}objects${File.separator}commit",
       s".sgit${File.separator}refs${File.separator}heads",
-      s".sgit${File.separator}refs${File.separator}tags",
+      s".sgit${File.separator}refs${File.separator}tags"
     )
 
     val listOfFiles: List[String] = List(
       s".sgit${File.separator}HEAD",
-      s".sgit${File.separator}STAGE"
+      s".sgit${File.separator}STAGE",
+      s".sgit${File.separator}LOGS",
+      s".sgit${File.separator}refs${File.separator}heads${File.separator}master"
     )
 
       if(IOManager.fileExists(".sgit")){

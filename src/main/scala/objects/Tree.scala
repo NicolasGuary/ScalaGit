@@ -55,12 +55,12 @@ object Tree {
   }
 
   //Creates a new tree with a list of entries and save it in .sgit/object/tree
-  def createTree(entries: List[Entry]): String = {
+  def createTree(entries: List[Entry]): Tree = {
     val tree = new Tree()
     entries.map(element => tree.set_items(tree.addElement(element)))
     val hash = tree.createTreeId(tree.get_items())
     tree.set_id(hash)
     tree.saveTreeFile(tree.get_id(), tree.get_items())
-    tree.get_id()
+    tree
   }
 }

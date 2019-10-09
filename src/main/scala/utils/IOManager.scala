@@ -5,6 +5,8 @@ import java.math.BigInteger
 import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
 
+import objects.Entry
+
 
 // This is an utility class for writing and managing files and directories
 object IOManager {

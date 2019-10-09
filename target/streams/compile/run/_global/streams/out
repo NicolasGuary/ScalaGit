@@ -1,9 +1,14 @@
-[0m[[0m[31merror[0m] [0m[0mjava.util.NoSuchElementException: None.get[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.None$.get(Option.scala:627)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.None$.get(Option.scala:626)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.addTrees(Commit.scala:51)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Commit$.commit(Commit.scala:20)[0m
-[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.delayedEndpoint$utils$scopt$ScoptParser$1(ScoptParser.scala:128)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.ArrayIndexOutOfBoundsException: 1[0m
+[0m[[0m[31merror[0m] [0m[0m	at objects.Stage.$anonfun$getStageAsEntries$3(Stage.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.ArrayOps$.map$extension(ArrayOps.scala:924)[0m
+[0m[[0m[31merror[0m] [0m[0m	at objects.Stage.getStageAsEntries(Stage.scala:34)[0m
+[0m[[0m[31merror[0m] [0m[0m	at objects.Blob$.convertToBlob(Blob.scala:16)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.doAdd(Add.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.$anonfun$add$1(Add.scala:17)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.$anonfun$add$1$adapted(Add.scala:15)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.ArrayOps$.map$extension(ArrayOps.scala:924)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.add(Add.scala:15)[0m
+[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.delayedEndpoint$utils$scopt$ScoptParser$1(ScoptParser.scala:125)[0m
 [0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$delayedInit$body.apply(ScoptParser.scala:22)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp$(Function0.scala:39)[0m
@@ -35,4 +40,4 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.util.NoSuchElementException: None.get[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.lang.ArrayIndexOutOfBoundsException: 1[0m
