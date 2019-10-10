@@ -89,7 +89,7 @@ object Commit {
     val root_blobs = Stage.retrieveStageRootBlobs()
     val stage = Stage.getStageAsEntries()
 
-    val non_root = stage.get_entries().filter(x => !root_blobs.contains(x))
+    val non_root = stage.entries.filter(x => !root_blobs.contains(x))
     val result = addTrees(non_root, List())
 
     val master_tree = generateCommitTree(result, root_blobs)

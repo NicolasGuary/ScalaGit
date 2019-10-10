@@ -1,5 +1,3 @@
-import java.io.File
-
 import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
 import objects.{Entry, Stage}
 class StageTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAfter{
@@ -7,7 +5,6 @@ class StageTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
   describe("If you try to get the STAGE ") {
     describe("and the STAGE is empty") {
       it("you should get an empty stage") {
-        val stage = new Stage()
         assert(Stage.getStageAsEntries().equals(Stage(List())))
       }
     }
@@ -15,8 +12,8 @@ class StageTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
       it("you should get a stage with 1 entry") {
         val stage = new Stage()
         val a = new Entry("tree", "1c", "testing/file_in_a.txt")
-        stage.set_entries(stage.addEntry(a))
-        assert(stage.equals(Stage(List(a))))
+        val newStage = stage.copy(List(a))
+        assert(newStage.equals(Stage(List(a))))
       }
     }
   }
@@ -25,7 +22,8 @@ class StageTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
     it("you should get one entry in the stage") {
       val stage = new Stage()
       val a = new Entry("tree", "1c", "testing/file_in_a.txt")
-      assert(stage.addEntry(a).length.equals(1))
+      val newStage = stage.copy(List(a))
+      assert(newStage.entries.length.equals(1))
     }
   }
 }

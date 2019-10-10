@@ -13,15 +13,16 @@ object Blob {
     val hash = getHashFromFile(file)
     val entry = new Entry("blob", hash, file.getPath)
 
-    var stage = Stage.getStageAsEntries()
-
-    if(stage.pathStaged(entry)){
+    val stage = Stage.getStageAsEntries()
+    if(Stage.pathStaged(entry, stage)){
       println(s"file ${entry.get_filepath()} was already staged. Updating reference.")
+
       IOManager.writeFile(s".sgit${File.separator}objects${File.separator}blobs${File.separator}${entry.get_hash()}", IOManager.readFile(file))
-      stage = stage.updateEntry(entry)
+      val updated_stage = Stage.updateEntry(entry, stage)
       Stage.clear()
-      stage.get_entries().map(x => IOManager.overwriteFile( s".sgit${File.separator}STAGE", x.get_filepath()+ " "+x.get_hash()+"\n"))
+      updated_stage.entries.map(x => IOManager.overwriteFile( s".sgit${File.separator}STAGE", x.get_filepath()+ " "+x.get_hash()+"\n"))
     } else {
+      println(s"${entry.get_filepath()}")
       IOManager.writeFile(s".sgit${File.separator}objects${File.separator}blobs${File.separator}${hash}", IOManager.readFile(file))
       IOManager.overwriteFile( s".sgit${File.separator}STAGE", file.getPath+ " "+hash+"\n")
     }
