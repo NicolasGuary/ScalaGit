@@ -6,6 +6,7 @@ import java.util.{Calendar, Date}
 import objects.Entry
 import objects.Tree
 import objects.Stage
+import objects.Index
 import utils.{IOManager, PathManager}
 
 import scala.annotation.tailrec
@@ -59,11 +60,11 @@ case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var pa
 
   //Returns the content of the Commit that should get hashed to get the new Commit id
   def commitContent(): String = {
-    s"tree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}"
+    s"tree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}\n"
   }
 
   def commitContentForLog(): String = {
-    s"commit ${this.get_id()}\ntree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}"
+    s"commit ${this.get_id()}\ntree ${this.master_tree.get_id()}\nauthor ${this.get_author()}\nparent ${this.get_parent_commit_id()}\ntimestamp ${this.get_timestamp()}\n"
   }
 
   def save(): Unit = {
@@ -71,11 +72,11 @@ case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var pa
   }
 
   def set_current_commit(): Unit = {
-    IOManager.writeFile(s".sgit${File.separator}refs${File.separator}heads${File.separator}master", this.get_id())
+    IOManager.writeFile(s".sgit${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}", this.get_id())
   }
 
   def record_in_logs(): Unit = {
-    IOManager.overwriteFile(s".sgit${File.separator}LOGS", this.commitContentForLog())
+    IOManager.overwriteFile(s".sgit${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}", this.commitContentForLog())
   }
 }
 
@@ -86,23 +87,26 @@ object Commit {
   }
 
   def commit(): Unit = {
-    val root_blobs = Stage.retrieveStageRootBlobs()
-    val stage = Stage.getStageAsEntries()
 
-    val non_root = stage.entries.filter(x => !root_blobs.contains(x))
-    val result = addTrees(non_root, List())
+    if(Index.getIndexAsEntries().entries.nonEmpty){
+      val root_blobs = Stage.retrieveStageRootBlobs()
+      val stage = Stage.getStageAsEntries()
+      val non_root = stage.entries.filter(x => !root_blobs.contains(x))
+      val result = addTrees(non_root, List())
+      val master_tree = generateCommitTree(result, root_blobs)
+      generateCommit(master_tree)
+      //Everything in the stage has been commit, we can now clear the index.
+      Index.clear()
+    } else {
+      println("Warning - Nothing to commit \n  (use \"sgit add <file>...\" to stage files to be committed)")
+    }
 
-    val master_tree = generateCommitTree(result, root_blobs)
-    val new_commit = generateCommit(master_tree)
-
-    //Everything in the stage has been commit, we can now clear the stage.
-    Stage.clear()
   }
 
 //TODO - master should be replaced by Branch.getCurrent()
   def generateCommit(master_tree: Tree): Commit = {
     val new_commit = new Commit()
-    val parent_commit_id = IOManager.readFile(new File(s".sgit${File.separator}refs${File.separator}heads${File.separator}master"))
+    val parent_commit_id = IOManager.readFile(new File(s".sgit${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}"))
     val timestamp = Calendar.getInstance().getTime()
     new_commit.set_parent_commit_id(parent_commit_id)
     new_commit.set_timestamp(timestamp)

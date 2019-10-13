@@ -2,7 +2,7 @@ package utils.scopt
 
 import java.io.File
 
-import actions.{Add, Commit, Init}
+import actions._
 import scopt.OParser
 
 // Config stores arguments for the commands inputed
@@ -16,6 +16,7 @@ case class Config(
                    stat: Boolean = false,
                    showAllBranches: Boolean = false,
                    branchName: String = "",
+                   checkoutBranch: String = "",
                    files: Seq[File] = Seq(),
                  )
 
@@ -79,6 +80,15 @@ object ScoptParser extends App {
             .text("show the status of insertion and deletion of each commited file")
             .action((_, c) => c.copy(stat = true))
         ),
+      cmd("checkout")
+        .action((_, c) => c.copy(command = "checkout"))
+        .text("Switch to branch")
+        .children(
+          arg[String]("branch")
+            .required()
+            .action((x, c) => c.copy(checkoutBranch = x))
+            .text("Name of the branch to switch to"),
+        ),
 
       //BRANCH command
       //Options: -p and -stat
@@ -96,7 +106,7 @@ object ScoptParser extends App {
             .text("Shows all branches"),
           opt[Unit]('v', "verbose")
             .action((_, c) => c.copy(verbose = true))
-            .text("Adds the hash and commit subject  for each branch"),
+            .text("Adds the hash and commit subject for each branch"),
           //Checking if the arguments received correspond to a valid action
           checkConfig(
             c =>
@@ -112,8 +122,6 @@ object ScoptParser extends App {
 
   // OParser.parse returns Option[Config] => we need to check if we received Some(config) or None
   // Then we need to call the method corresponding to the arguments received
-  // TODO - check if there is a better way to handle the commands
-  // TODO - Create a method to parse the args received from the config.
   // TODO - Check if the .sgit directory exists before doing any command other that init !
   OParser.parse(parser, args, Config()) match {
     case Some(config) => {
@@ -126,6 +134,19 @@ object ScoptParser extends App {
         }
         case "commit" => {
           Commit.commit()
+        }
+        case "branch" => {
+          if(config.verbose & config.verbose){
+            println("HEYHO LES POLICIERS")
+          } else {
+            Branch.branch(args.drop(1).mkString(" "))
+          }
+        }
+        case "log" => {
+          Log.log()
+        }
+        case "checkout" => {
+          Checkout.checkout(config.checkoutBranch)
         }
         case _ => {
           //Check if .sgit exists, if yes do the command, else throw an error because it's not an sgit repo

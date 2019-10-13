@@ -23,7 +23,6 @@ object Add {
     println("Adding files...")
     if (file.isDirectory){
       val allObjects = IOManager.exploreDirectory(file)
-      //allObjects.map(x => println(x))
       allObjects.map(item => if(item.isFile) {Blob.convertToBlob(item)})
     } else if (file.isFile){
         Blob.convertToBlob(file)

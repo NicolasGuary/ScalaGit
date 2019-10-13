@@ -55,6 +55,10 @@ def readFile(file: File): String = {
   new String(Files.readAllBytes(Paths.get(file.getAbsolutePath)))
 }
 
+  def removeFile(file: File): Unit = {
+    Files.delete(Paths.get(file.getAbsolutePath))
+  }
+
   def fileExists(path: String): Boolean ={
     Files.exists(Paths.get(path))
   }

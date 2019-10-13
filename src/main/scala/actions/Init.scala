@@ -16,13 +16,15 @@ object Init{
       s".sgit${File.separator}objects${File.separator}tree",
       s".sgit${File.separator}objects${File.separator}commit",
       s".sgit${File.separator}refs${File.separator}heads",
-      s".sgit${File.separator}refs${File.separator}tags"
+      s".sgit${File.separator}refs${File.separator}tags",
+      s".sgit${File.separator}refs${File.separator}logs"
     )
 
     val listOfFiles: List[String] = List(
       s".sgit${File.separator}HEAD",
       s".sgit${File.separator}STAGE",
-      s".sgit${File.separator}LOGS",
+      s".sgit${File.separator}INDEX",
+      s".sgit${File.separator}refs${File.separator}logs${File.separator}master",
       s".sgit${File.separator}refs${File.separator}heads${File.separator}master"
     )
 
@@ -31,7 +33,7 @@ object Init{
       } else {
         IOManager.createDirectories(listOfDirectories)
         IOManager.createFiles(listOfFiles)
-        IOManager.writeFile(listOfFiles(0), "ref: refs/heads/master")
+        IOManager.writeFile(listOfFiles(0), "refs/heads/master")
         println("A new sgit repository has been initialized with success.")
       }
   }

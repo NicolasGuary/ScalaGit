@@ -2,9 +2,6 @@ package objects
 
 import java.io.File
 import java.nio.file.{Files, Paths}
-
-import better.files.{File => BFile}
-import objects.Blob.getHashFromFile
 import utils.{IOManager, PathManager}
 
 /*
@@ -18,6 +15,7 @@ object Stage {
   def clear(): Unit = {
     IOManager.writeFile(s".sgit${File.separator}STAGE", "")
   }
+
 
   def addEntry(entry: Entry, stage: Stage): Stage = {
     val newEntries = entry +: stage.entries

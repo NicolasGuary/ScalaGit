@@ -1,15 +1,15 @@
-[0m[[0m[31merror[0m] [0m[0mjava.lang.ArrayIndexOutOfBoundsException: 1[0m
-[0m[[0m[31merror[0m] [0m[0m	at objects.Stage.$anonfun$getStageAsEntries$3(Stage.scala:34)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.collection.ArrayOps$.map$extension(ArrayOps.scala:924)[0m
-[0m[[0m[31merror[0m] [0m[0m	at objects.Stage.getStageAsEntries(Stage.scala:34)[0m
-[0m[[0m[31merror[0m] [0m[0m	at objects.Blob$.convertToBlob(Blob.scala:16)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.doAdd(Add.scala:33)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.$anonfun$add$1(Add.scala:17)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.$anonfun$add$1$adapted(Add.scala:15)[0m
-[0m[[0m[31merror[0m] [0m[0m	at scala.collection.ArrayOps$.map$extension(ArrayOps.scala:924)[0m
-[0m[[0m[31merror[0m] [0m[0m	at actions.Add$.add(Add.scala:15)[0m
-[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.delayedEndpoint$utils$scopt$ScoptParser$1(ScoptParser.scala:125)[0m
-[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$delayedInit$body.apply(ScoptParser.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.nio.file.NoSuchFileException: /Users/Nico/IdeaProjects/ScalaGit/.sgit/refs/logs/test[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.newByteChannel(Files.java:361)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.newByteChannel(Files.java:407)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.file.Files.readAllBytes(Files.java:3152)[0m
+[0m[[0m[31merror[0m] [0m[0m	at utils.IOManager$.readFile(IOManager.scala:55)[0m
+[0m[[0m[31merror[0m] [0m[0m	at actions.Branch$.branch(Branch.scala:17)[0m
+[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.delayedEndpoint$utils$scopt$ScoptParser$1(ScoptParser.scala:142)[0m
+[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$delayedInit$body.apply(ScoptParser.scala:23)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp(Function0.scala:39)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.Function0.apply$mcV$sp$(Function0.scala:39)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)[0m
@@ -20,7 +20,7 @@
 [0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:921)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.App.main(App.scala:73)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.App.main$(App.scala:71)[0m
-[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.main(ScoptParser.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser$.main(ScoptParser.scala:23)[0m
 [0m[[0m[31merror[0m] [0m[0m	at utils.scopt.ScoptParser.main(ScoptParser.scala)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[0m
 [0m[[0m[31merror[0m] [0m[0m	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)[0m
@@ -40,4 +40,4 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.lang.ArrayIndexOutOfBoundsException: 1[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) java.nio.file.NoSuchFileException: /Users/Nico/IdeaProjects/ScalaGit/.sgit/refs/logs/test[0m
