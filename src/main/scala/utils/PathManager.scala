@@ -54,9 +54,9 @@ object PathManager {
 
   //Returns "tree" or "blob" regarding of the type of the hash
   def natureOfHash(hash: String): String = {
-    if(new File(s".sgit${File.separator}objects${File.separator}tree${File.separator}$hash").exists){
+    if(new File(s"${IOManager.getRepoDirPath()}${File.separator}objects${File.separator}tree${File.separator}$hash").exists){
       "tree"
-    } else if (new File(s".sgit${File.separator}objects${File.separator}blobs${File.separator}$hash").exists){
+    } else if (new File(s"${IOManager.getRepoDirPath()}${File.separator}objects${File.separator}blobs${File.separator}$hash").exists){
       "blob"
     }else {
       "undefined"

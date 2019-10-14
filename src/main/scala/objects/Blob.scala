@@ -17,18 +17,18 @@ object Blob {
     val index = Index.getIndexAsEntries()
     if(Stage.pathStaged(entry, stage)){
       println(s"file ${entry.get_filepath()} was already staged. Updating reference.")
-      IOManager.writeFile(s".sgit${File.separator}objects${File.separator}blobs${File.separator}${entry.get_hash()}", IOManager.readFile(file))
+      IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${entry.get_hash()}", IOManager.readFile(file))
       val updated_stage = Stage.updateEntry(entry, stage)
       val updated_index = Index.updateEntry(entry, index)
       Stage.clear()
       Index.clear()
-      updated_stage.entries.map(x => IOManager.overwriteFile( s".sgit${File.separator}STAGE", x.get_filepath()+ " "+x.get_hash()+"\n"))
-      updated_index.entries.map(x => IOManager.overwriteFile( s".sgit${File.separator}INDEX", x.get_filepath()+ " "+x.get_hash()+"\n"))
+      updated_stage.entries.map(x => IOManager.overwriteFile( s"${IOManager.getRepoDirPath().get}${File.separator}STAGE", x.get_filepath()+ " "+x.get_hash()+"\n"))
+      updated_index.entries.map(x => IOManager.overwriteFile( s"${IOManager.getRepoDirPath().get}${File.separator}INDEX", x.get_filepath()+ " "+x.get_hash()+"\n"))
     } else {
       println(s"${entry.get_filepath()}")
-      IOManager.writeFile(s".sgit${File.separator}objects${File.separator}blobs${File.separator}${hash}", IOManager.readFile(file))
-      IOManager.overwriteFile( s".sgit${File.separator}STAGE", file.getPath+ " "+hash+"\n")
-      IOManager.overwriteFile( s".sgit${File.separator}INDEX", file.getPath+ " "+hash+"\n")
+      IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${hash}", IOManager.readFile(file))
+      IOManager.overwriteFile( s"${IOManager.getRepoDirPath().get}${File.separator}STAGE", file.getPath+ " "+hash+"\n")
+      IOManager.overwriteFile( s"${IOManager.getRepoDirPath().get}${File.separator}INDEX", file.getPath+ " "+hash+"\n")
     }
 
   }

@@ -1,0 +1,10 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mDiffTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mIf you try to get the diff [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  of the same file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get a Seq filled only with KEEP operations[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  and the files has 1 line that is different[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get a Seq with the right amount of Delta (1 ADD and 1 REMOVE so 2)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  and the files has 2 lines that are different[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get a Seq with the right amount of Delta (2 add and 2 remove so 4)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  and the second text is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get a Seq asking to remove all the lines from text1[0m[0m

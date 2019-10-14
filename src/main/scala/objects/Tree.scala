@@ -33,7 +33,7 @@ case class Tree(var items: List[Entry] = List(), var id: String = "") {
   }
 
   def saveTreeFile(id: String, items: List[Entry]): Unit = {
-    IOManager.overwriteFile(s".sgit${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
+    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
   }
 
   def createTreeId(items: List[Entry]): String = {

@@ -16,7 +16,7 @@ case class Index(var entries: List[Entry] = List())
 object Index {
 
   def clear(): Unit = {
-    IOManager.writeFile(s".sgit${File.separator}INDEX", "")
+    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX", "")
   }
 
   def addEntry(entry: Entry, index: Index): Index = {
@@ -34,7 +34,7 @@ object Index {
 
   //Returns the index as a list of Entries
   def getIndexAsEntries(): Index = {
-    val index = new File(s".sgit${File.separator}INDEX")
+    val index = new File(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX")
     val res = new String(Files.readAllBytes(Paths.get(index.getAbsolutePath)))
     if (!res.isEmpty){
       val index_content = res.split("\n").map(x => x.split(" "))

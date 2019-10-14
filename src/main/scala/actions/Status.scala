@@ -23,7 +23,8 @@ object Status {
 
 
   def changesToCommit(index: List[Entry], stage: List[Entry]): Unit = {
-    //TODO - new file not detected as when added the file goes straight into the stage
+    //TODO - new file not detected because when added the file goes straight into the stage
+    //In the index, when adding, check if the file is also in the stage. If yes it's modified, otherwise it's new.
     println("Changes to be committed:")
     index
       .filter(entry => !stage.contains(entry))

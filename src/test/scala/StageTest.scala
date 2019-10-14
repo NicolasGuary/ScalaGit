@@ -5,7 +5,7 @@ class StageTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
   describe("If you try to get the STAGE ") {
     describe("and the STAGE is empty") {
       it("you should get an empty stage") {
-        assert(Stage.getStageAsEntries().equals(Stage(List())))
+        assert(Stage().equals(Stage(List())))
       }
     }
     describe("and the STAGE contains one element") {

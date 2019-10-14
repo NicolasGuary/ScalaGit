@@ -17,7 +17,7 @@ case class Config(
                    showAllBranches: Boolean = false,
                    branchName: String = "",
                    checkoutBranch: String = "",
-                   files: Seq[File] = Seq(),
+                   files: Seq[File] = Seq()
                  )
 
 object ScoptParser extends App {
@@ -87,7 +87,7 @@ object ScoptParser extends App {
           arg[String]("branch")
             .required()
             .action((x, c) => c.copy(checkoutBranch = x))
-            .text("Name of the branch to switch to"),
+            .text("Name of the branch to switch to")
         ),
 
       //BRANCH command

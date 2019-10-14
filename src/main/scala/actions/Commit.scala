@@ -68,15 +68,15 @@ case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var pa
   }
 
   def save(): Unit = {
-    IOManager.overwriteFile(s".sgit${File.separator}objects${File.separator}commit${File.separator}${this.get_id()}" , commitContent())
+    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${this.get_id()}" , commitContent())
   }
 
   def set_current_commit(): Unit = {
-    IOManager.writeFile(s".sgit${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}", this.get_id())
+    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}", this.get_id())
   }
 
   def record_in_logs(): Unit = {
-    IOManager.overwriteFile(s".sgit${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}", this.commitContentForLog())
+    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}", this.commitContentForLog())
   }
 }
 
@@ -87,7 +87,6 @@ object Commit {
   }
 
   def commit(): Unit = {
-
     if(Index.getIndexAsEntries().entries.nonEmpty){
       val root_blobs = Stage.retrieveStageRootBlobs()
       val stage = Stage.getStageAsEntries()
@@ -106,7 +105,7 @@ object Commit {
 //TODO - master should be replaced by Branch.getCurrent()
   def generateCommit(master_tree: Tree): Commit = {
     val new_commit = new Commit()
-    val parent_commit_id = IOManager.readFile(new File(s".sgit${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}"))
+    val parent_commit_id = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}"))
     val timestamp = Calendar.getInstance().getTime()
     new_commit.set_parent_commit_id(parent_commit_id)
     new_commit.set_timestamp(timestamp)

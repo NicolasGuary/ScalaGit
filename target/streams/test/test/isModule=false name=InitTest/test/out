@@ -1,0 +1,6 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mInitTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mIf you try to initialize a new sgit repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  and you don't have one initialized yet[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should create a brand new .sgit directory.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  and you already have a sgit directory initialized[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should print an error message saying you already have a .sgit directory[0m[0m

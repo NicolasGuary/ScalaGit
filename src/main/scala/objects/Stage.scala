@@ -13,7 +13,7 @@ case class Stage(var entries: List[Entry] = List())
 object Stage {
 
   def clear(): Unit = {
-    IOManager.writeFile(s".sgit${File.separator}STAGE", "")
+    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE", "")
   }
 
 
@@ -54,7 +54,7 @@ object Stage {
 
   //Returns the stage as a list of Entries
   def getStageAsEntries(): Stage = {
-    val stage = new File(s".sgit${File.separator}STAGE")
+    val stage = new File(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE")
     val res = new String(Files.readAllBytes(Paths.get(stage.getAbsolutePath)))
     if (!res.isEmpty){
       val stage_content = res.split("\n").map(x => x.split(" "))
