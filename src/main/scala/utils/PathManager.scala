@@ -1,7 +1,6 @@
 package utils
 
 import java.io.File
-
 import objects.Entry
 
 object PathManager {
@@ -27,13 +26,14 @@ object PathManager {
     }
   }
 
-  //Returns the longest path
-  //If there are more than 1, it returns the first one found
-  //returns:
-  //  deepest: the list of the deepest Entries (if there multiple one with same value)
-  //  rest: all the others Entries that are not in deepest (either same size but different or shorter)
-  //  pathForMax: the maximum path found
-
+  /**
+   * Returns the longest path from l
+   * If there are more than 1, it returns the first one found
+   * @param l
+   * @return  deepest: the list of the deepest Entries (if there are multiple one with same value)
+   *          rest: all the others Entries that are not in deepest (either same size but different or shorter)
+   *          pathForMax: the maximum path found
+   */
   def getDeepestDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
     var max = 0
     var pathForMax = ""
@@ -44,7 +44,6 @@ object PathManager {
 
     val rest = l.filter(x => !x.getFileDirectoryPath().equals(pathForMax))
     val deepest = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
-
     (deepest, rest, pathForMax)
   }
 
@@ -54,9 +53,9 @@ object PathManager {
 
   //Returns "tree" or "blob" regarding of the type of the hash
   def natureOfHash(hash: String): String = {
-    if(new File(s"${IOManager.getRepoDirPath()}${File.separator}objects${File.separator}tree${File.separator}$hash").exists){
+    if(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}$hash").exists){
       "tree"
-    } else if (new File(s"${IOManager.getRepoDirPath()}${File.separator}objects${File.separator}blobs${File.separator}$hash").exists){
+    } else if (new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}$hash").exists){
       "blob"
     }else {
       "undefined"

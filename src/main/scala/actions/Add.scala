@@ -8,7 +8,7 @@ object Add {
 
   def add(path: String): Unit = {
     val paths = path.split(" ")
-
+    println("Adding files...")
     paths.map(path =>
       if(new File(path).exists()) {
           doAdd(path)
@@ -20,7 +20,6 @@ object Add {
 
   def doAdd(path: String): Unit = {
     val file = new File(path)
-    println("Adding files...")
     if (file.isDirectory){
       val allObjects = IOManager.exploreDirectory(file)
       allObjects.map(item => if(item.isFile) {Blob.convertToBlob(item)})

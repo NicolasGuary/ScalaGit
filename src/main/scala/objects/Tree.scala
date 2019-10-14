@@ -58,6 +58,8 @@ object Tree {
   def createTree(entries: List[Entry]): Tree = {
     val tree = new Tree()
     entries.map(element => tree.set_items(tree.addElement(element)))
+    entries.map(el => println(el.filepath))
+    println("-----------------------------")
     val hash = tree.createTreeId(tree.get_items())
     tree.set_id(hash)
     tree.saveTreeFile(tree.get_id(), tree.get_items())

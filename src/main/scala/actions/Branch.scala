@@ -1,7 +1,6 @@
 package actions
 
 import java.io.File
-
 import objects.Branch
 import utils.IOManager
 
@@ -24,7 +23,7 @@ object Branch {
   }
 
   //TODO - create a Commit object from the hash
-  //TODO - create a merhod in commit that can retrieve the informations from the ID
+  //TODO - create a method in commit that can retrieve the informations from the ID
   def getCurrentCommitHash(): String = {
     val branch_path = s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${getCurrentBranch().name}"
     IOManager.readFile(new File(branch_path))

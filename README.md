@@ -20,7 +20,7 @@ This project is part of the functional programming course.
 #### Branches and Tags
 * sgit branch <branch name> (Create a new branch) ✅
 * sgit branch -av (List all existing branches and tags) ⏳
-* sgit checkout <branch or tag or commit hash> ⏳
+* sgit checkout <branch or tag or commit hash> ✅ (tag or commit hash to do)
 * sgit tag <tag name>
 
 

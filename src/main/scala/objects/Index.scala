@@ -32,6 +32,12 @@ object Index {
     new Index(new_entries)
   }
 
+  //Tells if the path is already in the index
+  def pathStaged(entry: Entry, current_index: Index): Boolean = {
+    val res = current_index.entries.filter(x => x.get_filepath().equals(entry.get_filepath()))
+    res.nonEmpty
+  }
+
   //Returns the index as a list of Entries
   def getIndexAsEntries(): Index = {
     val index = new File(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX")

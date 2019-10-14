@@ -177,4 +177,14 @@ def readFile(file: File): String = {
   def getHashFromFile(file: File): String = {
     hash(readFile(file))
   }
+
+  /**
+   *
+   * @param path
+   * @return this path but relativized to the root of the sgit repository
+   */
+  def relativize(path: String): String = {
+    val repo_dir = getRepoDirPath().get
+    BFile(repo_dir).parent.relativize(BFile(path)).toString
+  }
 }
