@@ -10,7 +10,7 @@ object Blob {
   //Converts the file in parameters to a blob and stores it into the .sgit/objects/blobs folder
   //It also has the responsibility to update the STAGE file.
   def convertToBlob(file: File): Unit = {
-    val hash = getHashFromFile(file)
+    val hash = IOManager.getHashFromFile(file)
     val entry = new Entry("blob", hash, file.getPath)
 
     val stage = Stage.getStageAsEntries()
@@ -31,9 +31,5 @@ object Blob {
       IOManager.overwriteFile( s".sgit${File.separator}INDEX", file.getPath+ " "+hash+"\n")
     }
 
-  }
-
-  def getHashFromFile(file: File): String = {
-    IOManager.hash(IOManager.readFile(file))
   }
 }

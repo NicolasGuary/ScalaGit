@@ -4,16 +4,22 @@ import java.io.{BufferedWriter, File, FileWriter}
 import java.math.BigInteger
 import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
-
+import scala.annotation.tailrec
+import better.files.{File => BFile}
 import objects.Entry
 
+// TODO - clean unused methods that were implemented first because I thought they would be useful...
 
 // This is an utility class for writing and managing files and directories
 object IOManager {
 
-  var ignore: List[String]= List(".sgit", ".git", ".DS_Store")
-  //Create a file with the name passed in parameters
-  //Returns true if it worked, false otherwise
+  var ignore: List[String]= List(".sgit", ".git", ".DS_Store", "project", ".idea", "target", "streams", "inputFileStamps")
+
+  /**
+   * Create a file with the name passed in parameters
+   * @param name
+   * @return true if it worked, false otherwise
+   */
   def createFile(name: String): Boolean ={
     new File(name).createNewFile()
   }
@@ -107,7 +113,6 @@ def readFile(file: File): String = {
 // Method that explores all the folder from the path in argument.
 // It should also omit .sgit and .git folders so it doesn't add them to the repo.
 // This method only retrieves the files
-  // TODO - add a list of items to ignore
   def exploreDirectory(path: File): List[File] = {
       val allFiles = path.listFiles().toList
       allFiles.flatMap(item =>
@@ -124,7 +129,52 @@ def readFile(file: File): String = {
         )
   }
 
+  // Method that explores all the folder from the path in argument.
+  // It should also omit .sgit and .git folders so it doesn't add them to the repo.
+  // This method only retrieves the files
+  def exploreDirectoryAsEntries(path: File): List[Entry] = {
+    val basedir = System.getProperty("user.dir")
+    val allFiles = path.listFiles().toList
+    allFiles.flatMap(item =>
+      if (!ignore.contains(item.getName)) {
+        if (item.isDirectory) {
+          exploreDirectoryAsEntries(item)
+        }
+        else {
+          List(new Entry("blob", getHashFromFile(item), BFile(basedir).relativize(BFile(item.getPath)).toString))
+        }
+      } else {
+        List[Entry]()
+      }
+    )
+  }
+
+  /**
+   * @param: String, the path, initialized at . (current path)
+   * @return the path as String for the nearest .sgit repository or None if no .sgit repository is initialized from the current path to root.
+   */
+  @tailrec
+  def getRepoDirPath(path: String = "."): Option[String] = {
+    val currentCanonicalPath = new File(path).getCanonicalFile()
+    val repository_dir = ".sgit"
+    if (containsDirectory(new File(s"${currentCanonicalPath}${File.separator}${repository_dir}")))
+      Some(s"${currentCanonicalPath}${File.separator}${repository_dir}")
+    else {
+      if (currentCanonicalPath.getParentFile() == null) None
+      else getRepoDirPath(currentCanonicalPath.getParentFile().getCanonicalPath)
+    }
+  }
+
+  /**
+   *
+   * @param s
+   * @return the hashed value for the String s
+   */
   def hash(s: String): String = {
     String.format("%032x", new BigInteger(1, MessageDigest.getInstance("SHA-256").digest(s.getBytes("UTF-8"))))
+  }
+
+  def getHashFromFile(file: File): String = {
+    hash(readFile(file))
   }
 }

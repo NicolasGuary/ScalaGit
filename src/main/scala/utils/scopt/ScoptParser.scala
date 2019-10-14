@@ -136,14 +136,17 @@ object ScoptParser extends App {
           Commit.commit()
         }
         case "branch" => {
+          println(s"config reçue =  ${config} avec ${args}")
           if(config.verbose & config.verbose){
-            println("HEYHO LES POLICIERS")
           } else {
-            Branch.branch(args.drop(1).mkString(" "))
+            Branch.branch(config.branchName)
           }
         }
         case "log" => {
           Log.log()
+        }
+        case "status" => {
+          Status.status()
         }
         case "checkout" => {
           Checkout.checkout(config.checkoutBranch)

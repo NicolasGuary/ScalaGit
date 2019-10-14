@@ -6,9 +6,9 @@ This project is part of the functional programming course.
 #### Create:
  * sgit init ✅
 #### Local Changes:
-* sgit status ✅
+* sgit status ⏳
 * sgit diff ⏳
-* sgit add <filename/filenames or . or regexp>  ✅ (regexp to handle)
+* sgit add <filename/filenames or . or regexp> ✅
 * git commit ✅
 
 #### Commit History:

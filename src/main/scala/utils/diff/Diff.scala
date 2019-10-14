@@ -1,4 +1,5 @@
 package utils.diff
+
 import Console.{GREEN, RED, RESET}
 //Implementation of Myer's diff algorithm
 //Using the tutorial found at https://blog.jcoglan.com/2017/02/12/the-myers-diff-algorithm-part-1/
