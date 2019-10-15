@@ -13,19 +13,11 @@ import utils.IOManager
 case class Tree(var items: List[Entry] = List(), var id: String = "") {
 
   def addElement(items: Entry): List[Entry] = {
-    new Entry(items.get_content_type(), items.get_hash(), items.get_filepath()) :: this.get_items()
-  }
-
-  def get_items(): List[Entry] = {
-    this.items
+    new Entry(items.content_type, items.hash, items.filepath) :: this.items
   }
 
   def set_items (items: List[Entry]): Unit = {
     this.items = items
-  }
-
-  def get_id(): String = {
-    this.id
   }
 
   def set_id (id: String): Unit = {
@@ -58,11 +50,11 @@ object Tree {
   def createTree(entries: List[Entry]): Tree = {
     val tree = new Tree()
     entries.map(element => tree.set_items(tree.addElement(element)))
-    entries.map(el => println(el.filepath))
+    entries.map(el => println(s"le tree reçoit: ${el.filepath}"))
     println("-----------------------------")
-    val hash = tree.createTreeId(tree.get_items())
+    val hash = tree.createTreeId(tree.items)
     tree.set_id(hash)
-    tree.saveTreeFile(tree.get_id(), tree.get_items())
+    tree.saveTreeFile(tree.id, tree.items)
     tree
   }
 }

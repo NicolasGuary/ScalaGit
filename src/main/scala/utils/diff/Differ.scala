@@ -1,24 +1,26 @@
 package utils.diff
 
-import Console.{GREEN, RED, RESET}
+import Console.{GREEN, BLUE, RED, RESET}
 //Implementation of Myer's diff algorithm
 //Using the tutorial found at https://blog.jcoglan.com/2017/02/12/the-myers-diff-algorithm-part-1/
 
-object Diff {
+object Differ {
 
   /**
    * Displays all the modifications to do to file1 to get to file2
    * @param file1
    * @param file2
+   * @param filepath
    *
    */
-  def displayDiff(file1: Seq[String], file2: Seq[String]): Unit = {
+  def displayDiff(file1: Seq[String], file2: Seq[String], filepath: String): Unit = {
+    println(s"${BLUE}Differences found in file ${filepath}${RESET}")
     val deltas = diffFiles(file1, file2)
     deltas.map(delta => delta.diff match {
-      case Operations.ADD => println(s"${GREEN}${delta.index} ${displayOperation(delta.diff)} ${delta.content}${RESET}")
-      case Operations.REMOVE => println(s"${RED}${delta.index} ${displayOperation(delta.diff)} ${delta.content}${RESET}")
-      case _ => println(s"${delta.index} ${displayOperation(delta.diff)} ${delta.content}")
-    } )
+      case Operations.ADD => println(s"${GREEN}${displayOperation(delta.diff)} ${delta.content}${RESET}")
+      case Operations.REMOVE => println(s"${RED}${displayOperation(delta.diff)} ${delta.content}${RESET}")
+      case _ => println(s"${displayOperation(delta.diff)} ${delta.content}")
+    })
   }
 
   /**

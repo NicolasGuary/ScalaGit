@@ -1,17 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala:57:28: not enough arguments for method addTrees: (l: List[objects.Entry], commitTree: List[objects.Entry], longestPath: List[objects.Entry])List[objects.Entry].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter longestPath.[0m
-[0m[[0m[31merror[0m] [0m[0m      val result = addTrees(non_root, List())[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala:115:19: not enough arguments for method addTrees: (l: List[objects.Entry], commitTree: List[objects.Entry], longestPath: List[objects.Entry])List[objects.Entry].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter longestPath.[0m
-[0m[[0m[31merror[0m] [0m[0m          addTrees(rest, List(new Entry("tree" ,hash, path_max)))[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala:117:19: not enough arguments for method addTrees: (l: List[objects.Entry], commitTree: List[objects.Entry], longestPath: List[objects.Entry])List[objects.Entry].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter longestPath.[0m
-[0m[[0m[31merror[0m] [0m[0m          addTrees(rest, new Entry("tree" ,hash, path_max) :: commitTree)[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala:120:17: not enough arguments for method addTrees: (l: List[objects.Entry], commitTree: List[objects.Entry], longestPath: List[objects.Entry])List[objects.Entry].[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter longestPath.[0m
-[0m[[0m[31merror[0m] [0m[0m        addTrees(new Entry("tree", hash, PathManager.getParentPath(path_max).get) :: rest, commitTree)[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Branch.scala:4:16: imported `Branch` is permanently hidden by definition of object Branch in package actions[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport objects.Branch[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

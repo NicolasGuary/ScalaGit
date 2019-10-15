@@ -1,45 +1,10 @@
 package actions
 
 import java.io.File
-import java.util.{Calendar, Date}
-import objects.Entry
-import objects.Tree
-import objects.Stage
-import objects.Index
+import java.util.{Calendar}
+import objects.{Commit, Entry, Index, Stage, Tree}
 import utils.{IOManager, PathManager}
 import scala.annotation.tailrec
-
-/**
- * This is the class that handles the commit
- * @param id
- * @param master_tree
- * @param parent_commit_id
- * @param author
- * @param timestamp
- */
-case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var parent_commit_id: String ="", var author: String = "NicolasGuary", var timestamp: Date = new Date()) {
-
-  //Returns the content of the Commit that should get hashed to get the new Commit id
-  def commitContent(): String = {
-    s"tree ${this.master_tree.get_id()}\nauthor ${this.author}\nparent ${this.parent_commit_id}\ntimestamp ${this.timestamp}\n"
-  }
-
-  def commitContentForLog(): String = {
-    s"commit ${this.id}\ntree ${this.master_tree.get_id()}\nauthor ${this.author}\nparent ${this.parent_commit_id}\ntimestamp ${this.timestamp}\n"
-  }
-
-  def save(): Unit = {
-    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${this.id}" , commitContent())
-  }
-
-  def set_current_commit(): Unit = {
-    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}", this.id)
-  }
-
-  def record_in_logs(): Unit = {
-    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}", this.commitContentForLog())
-  }
-}
 
 object Commit {
   def apply(): Commit = {
@@ -62,17 +27,15 @@ object Commit {
     } else {
       println("Warning - Nothing to commit \n  (use \"sgit add <file>...\" to stage files to be committed)")
     }
-
   }
 
   /**
-   *
    * @param master_tree
    * @return a new Commit generated using the master_tree
    */
   def generateCommit(master_tree: Tree): Commit = {
     val parent_commit_id = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}"))
-    val timestamp = Calendar.getInstance().getTime()
+    val timestamp = Calendar.getInstance().getTime.toString
     val commit = new Commit(parent_commit_id = parent_commit_id, timestamp = timestamp, master_tree = master_tree)
     val id = IOManager.hash(commit.commitContent())
     val new_commit = commit.copy(id = id)
@@ -117,6 +80,7 @@ object Commit {
           addTrees(rest, new Entry("tree" ,hash, path_max) :: commitTree)
         }
       } else {
+        println(s"GOOD PATH: ${PathManager.getFileDirectoryPath(path_max)}")
         addTrees(new Entry("tree", hash, PathManager.getParentPath(path_max).get) :: rest, commitTree)
       }
     }

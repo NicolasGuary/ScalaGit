@@ -2,6 +2,7 @@ package utils
 
 import java.io.File
 import objects.Entry
+import better.files.{File => BFile}
 
 object PathManager {
 
@@ -37,6 +38,7 @@ object PathManager {
   def getDeepestDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
     var max = 0
     var pathForMax = ""
+    l.map(x => println(s"liste contient: ${x.filepath}"))
     l.map(line => if (line.getFileDirectoryPath().split("/").size >= max) {
       max = line.getFileDirectoryPath().split("/").size
       pathForMax = line.getFileDirectoryPath()
@@ -44,6 +46,8 @@ object PathManager {
 
     val rest = l.filter(x => !x.getFileDirectoryPath().equals(pathForMax))
     val deepest = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
+    val all_path_max = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
+    all_path_max.map(x => println(s"Le path max deepest= ${x.filepath}"))
     (deepest, rest, pathForMax)
   }
 
@@ -59,6 +63,19 @@ object PathManager {
       "blob"
     }else {
       "undefined"
+    }
+  }
+
+
+  /**
+   * @return the path without the file name if it's a file or the unchanged path is it's a directory
+   */
+  def getFileDirectoryPath(path: String): String = {
+    val base_dir = System.getProperty("user.dir")
+    if(new File(path).isFile) {
+      BFile(base_dir).relativize(BFile(path).parent).toString
+    } else {
+      path
     }
   }
 }

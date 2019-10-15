@@ -1,5 +1,5 @@
 import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
-import utils.diff.{Diff, Operations}
+import utils.diff.{Differ, Operations}
 
 class DiffTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAfter{
   describe("If you try to get the diff ") {
@@ -7,7 +7,7 @@ class DiffTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAf
       it("you should get a Seq filled only with KEEP operations") {
         val text1 = Seq("a","a","a")
         val text2 = Seq("a","a","a")
-        val deltas = Diff.diffFiles(text1, text2)
+        val deltas = Differ.diffFiles(text1, text2)
         assert(deltas.filter(delta => !delta.diff.equals(Operations.KEEP)).isEmpty)
       }
     }
@@ -15,7 +15,6 @@ class DiffTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAf
       it("you should get a Seq with the right amount of Delta (1 ADD and 1 REMOVE so 2)") {
         val text1 = Seq("a","a","a")
         val text2 = Seq("a")
-        val deltas = Diff.displayDiff(text1, text2)
         //assert(deltas.filter(delta => delta.diff.equals(Operations.ADD) || delta.diff.equals(Operations.REMOVE)).length == 2)
       }
     }
@@ -25,8 +24,7 @@ class DiffTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAf
         println("DIFFING aaa and bba")
         val text1 = Seq("a","a","a")
         val text2 = Seq("b","b","a")
-        val deltas = Diff.diffFiles(text1, text2)
-        Diff.displayDiff(text1, text2)
+        val deltas = Differ.diffFiles(text1, text2)
         assert(deltas.filter(delta => delta.diff.equals(Operations.ADD) || delta.diff.equals(Operations.REMOVE)).length == 4)
       }
     }
@@ -35,7 +33,7 @@ class DiffTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAf
       it("you should get a Seq asking to remove all the lines from text1") {
         val text1 = Seq("a","a","a")
         val text2 = Seq()
-        assert(Diff.diffFiles(text1, text2).length.equals(text1.length))
+        assert(Differ.diffFiles(text1, text2).length.equals(text1.length))
       }
     }
   }

@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/DiffTest.scala:18:40: not enough arguments for method displayDiff: (file1: Seq[String], file2: Seq[String], filepath: String)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter filepath.[0m
+[0m[[0m[31merror[0m] [0m[0m        val deltas = Differ.displayDiff(text1, text2)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/DiffTest.scala:29:27: not enough arguments for method displayDiff: (file1: Seq[String], file2: Seq[String], filepath: String)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter filepath.[0m
+[0m[[0m[31merror[0m] [0m[0m        Differ.displayDiff(text1, text2)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

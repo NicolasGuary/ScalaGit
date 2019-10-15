@@ -68,7 +68,7 @@ object ScoptParser extends App {
         .text("Show changes between commits, commit and working tree, etc"),
 
       //LOG command
-      //Options: -p and -stat
+      //Options: -p and --stat
       cmd("log")
         .action((_, c) => c.copy(command = "log"))
         .text(" Show commit logs (chronological order)")
@@ -91,14 +91,14 @@ object ScoptParser extends App {
         ),
 
       //BRANCH command
-      //Options: -p and -stat
+      //Option: -av
       //Args: sgit branch <name>
       cmd("branch")
         .action((_, c) => c.copy(command = "branch"))
         .text("Creates a new branch")
         .children(
           arg[String]("name")
-            .required()
+            .optional()
             .action((x, c) => c.copy(branchName = x))
             .text("Name of the new branch"),
           opt[Unit]('a', "all")
@@ -136,11 +136,9 @@ object ScoptParser extends App {
           Commit.commit()
         }
         case "branch" => {
-          println(s"config reçue =  ${config} avec ${args}")
-          if(config.verbose & config.verbose){
-          } else {
-            Branch.branch(config.branchName)
-          }
+          if (config.showAllBranches || config.verbose)
+            Branch.branchAllVerbose()
+          else Branch.branch(config.branchName)
         }
         case "log" => {
           Log.log()
@@ -148,12 +146,15 @@ object ScoptParser extends App {
         case "status" => {
           Status.status()
         }
+        case "diff" => {
+          Diff.diff()
+        }
         case "checkout" => {
           Checkout.checkout(config.checkoutBranch)
         }
         case _ => {
           //Check if .sgit exists, if yes do the command, else throw an error because it's not an sgit repo
-          println(s"config reçue =  ${config} avec ${args}")
+          println(s"config reçue =  ${config} avec ${args.map(x => println(x))}")
         }
       }
     }

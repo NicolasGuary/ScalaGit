@@ -47,9 +47,8 @@ object Stage {
   // Will be used to create the commit tree, because it needs to point to these blobs
   def retrieveStageRootBlobs(): List[Entry] = {
     val stage = Stage.getStageAsEntries()
-
     //Filter to keep only the root blobs
-    stage.entries.filter(x => PathManager.isRootItem(x.get_filepath()))
+    stage.entries.filter(x => PathManager.isRootItem(x.filepath))
   }
 
   //Returns the stage as a list of Entries
