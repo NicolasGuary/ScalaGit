@@ -6,8 +6,7 @@ import utils.IOManager
 
 object Add {
 
-  def add(path: String): Unit = {
-    val paths = path.split(" ")
+  def add(paths: Seq[String]): Unit = {
     println("Adding files...")
     paths.map(path =>
       if(new File(path).exists()) {

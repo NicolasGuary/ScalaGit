@@ -15,9 +15,10 @@ case class Config(
                    debug: Boolean = false,
                    stat: Boolean = false,
                    showAllBranches: Boolean = false,
+                   tagName: String = "",
                    branchName: String = "",
                    checkoutBranch: String = "",
-                   files: Seq[File] = Seq()
+                   files: Seq[String] = Seq()
                  )
 
 object ScoptParser extends App {
@@ -45,13 +46,12 @@ object ScoptParser extends App {
         .action((_, c) => c.copy(command = "add"))
         .text("Stages the files passed in arguments of the command.")
         .children(
-          arg[File]("<file>...")
+          arg[String]("<file>...")
             .unbounded()
             .optional()
             .action((x, c) => c.copy(files = c.files :+ x))
             .text("Files to add to the stage")
         ),
-
       //STATUS command
       cmd("status")
         .action((_, c) => c.copy(command = "status"))
@@ -80,6 +80,17 @@ object ScoptParser extends App {
             .text("show the status of insertion and deletion of each commited file")
             .action((_, c) => c.copy(stat = true))
         ),
+      //TAG command
+      cmd("tag")
+        .action((_, c) => c.copy(command = "tag"))
+        .text("tag the current commit with the name given, or display all tags if no name")
+        .children(
+          arg[String]("name")
+            .optional()
+            .action((x, c) => c.copy(tagName = x))
+            .text("name for the tag of the current commit")
+        ),
+      //CHECKOUT command
       cmd("checkout")
         .action((_, c) => c.copy(command = "checkout"))
         .text("Switch to branch")
@@ -130,7 +141,7 @@ object ScoptParser extends App {
           Init.init()
         }
         case "add" => {
-          Add.add(args.drop(1).mkString(" "))
+          Add.add(config.files)
         }
         case "commit" => {
           Commit.commit()
@@ -143,6 +154,9 @@ object ScoptParser extends App {
         case "log" => {
           Log.log()
         }
+        case "tag" =>
+          if (config.tagName.isEmpty)Tag.listAllTags()
+          else Tag.tag(config.tagName)
         case "status" => {
           Status.status()
         }

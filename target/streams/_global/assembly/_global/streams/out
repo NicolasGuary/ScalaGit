@@ -8,7 +8,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: fa40fe30091058593ddcee9206dce87987da5e46[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: ab3dad4b871fbd7d36c2ebc7da5cee53c6f12214[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/Final/ScalaGit/target/scala-2.13/SGit-assembly-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LICENSE_scala-library-2.13.1[0m
@@ -51,6 +51,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/actions/Status$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	actions/Status.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/actions/Status.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	actions/Tag$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/actions/Tag$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	actions/Tag.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/actions/Tag.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	better/files/BomEncoder.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/c9d80648638685e635f4585dbe85926d4fbed74d_0f9f278c114ceb35cd1b10c213cf0cf82f3f1a90_da39a3ee5e6b4b0d3255bfef95601890afd80709/better/files/BomEncoder.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	better/files/Disposable$$anon$1.class[0m

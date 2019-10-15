@@ -12,7 +12,7 @@ object Branch {
     val new_branch = s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}$name"
     println(s"created new branch $name")
     val current_commit = getCurrentCommitHash()
-    IOManager.writeFile(new_branch, current_commit)
+    IOManager.writeFile(new_branch, current_commit.getOrElse(""))
     //Generating the log file for the new branch
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}$name",
       IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${getCurrentBranch().name}")))
@@ -37,9 +37,12 @@ object Branch {
 
   //TODO - create a Commit object from the hash
   //TODO - create a method in commit that can retrieve the informations from the ID
-  def getCurrentCommitHash(): String = {
+  def getCurrentCommitHash(): Option[String] = {
     val branch_path = s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${getCurrentBranch().name}"
-    IOManager.readFile(new File(branch_path))
+    new File(branch_path).exists() match {
+      case true =>  Some(IOManager.readFile(new File(branch_path)))
+      case false => None
+    }
   }
 
 }

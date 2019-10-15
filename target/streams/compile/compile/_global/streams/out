@@ -1,4 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Branch.scala:4:16: imported `Branch` is permanently hidden by definition of object Branch in package actions[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport objects.Branch[0m
-[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Tag.scala:26:5: not found: value branches[0m
+[0m[[0m[31merror[0m] [0m[0m    branches.map(branch => if(branch.getName.equals(getCurrentBranch().name)){[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
