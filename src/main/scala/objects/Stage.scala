@@ -42,16 +42,10 @@ object Stage {
     new Stage(new_entries)
   }
 
-  // returns a list of Entries
-  // Only for the files that are at root of the project
-  // Will be used to create the commit tree, because it needs to point to these blobs
-  def retrieveStageRootBlobs(): List[Entry] = {
-    val stage = Stage.getStageAsEntries()
-    //Filter to keep only the root blobs
-    stage.entries.filter(x => PathManager.isRootItem(x.filepath))
-  }
-
-  //Returns the stage as a list of Entries
+  /**
+   *
+   * @return the stage as a list of Entries
+   */
   def getStageAsEntries(): Stage = {
     val stage = new File(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE")
     val res = new String(Files.readAllBytes(Paths.get(stage.getAbsolutePath)))
@@ -68,5 +62,37 @@ object Stage {
       new Stage()
     }
   }
+
+  /**
+   * Only for the files that are at root of the project
+   * Will be used to create the commit tree, because it needs to point to these blobs
+   * @return a list of CommitEntries
+   */
+  def retrieveStageRootBlobs(): List[CommitEntry] = {
+    val stage = Stage.getStageAsCommitEntries()
+    //Filter to keep only the root blobs
+    stage.filter(x => PathManager.isRootItem(x.filepath))
+  }
+
+  /**
+   * This reads from the STAGE file and create a list with CommitEntry used to generate the Trees during commit
+   * @return the stage as a list of CommitEntries
+   */
+  def getStageAsCommitEntries(): List[CommitEntry] = {
+    val stage = new File(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE")
+    val res = new String(Files.readAllBytes(Paths.get(stage.getAbsolutePath)))
+    if (!res.isEmpty){
+      val stage_content = res.split("\n").map(x => x.split(" "))
+      val paths = stage_content.map(x => x(0)).toList
+      val hashs = stage_content.map(x => x(1)).toList
+      val blob = List.fill(paths.size)("blob")
+      val entries = (paths, hashs, blob).zipped.toList.map(x => CommitEntry(x._3, x._2, x._1, x._1))
+      entries
+    } else {
+      List()
+    }
+  }
+
+
 }
 

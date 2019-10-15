@@ -1,7 +1,8 @@
 package utils
 
 import java.io.File
-import objects.Entry
+
+import objects.{Entry, CommitEntry}
 import better.files.{File => BFile}
 
 object PathManager {
@@ -31,23 +32,21 @@ object PathManager {
    * Returns the longest path from l
    * If there are more than 1, it returns the first one found
    * @param l
-   * @return  deepest: the list of the deepest Entries (if there are multiple one with same value)
-   *          rest: all the others Entries that are not in deepest (either same size but different or shorter)
+   * @return  deepest: the list of the deepest CommitEntry (if there are multiple one with same value)
+   *          rest: all the others CommitEntry that are not in deepest (either same size but different or shorter)
    *          pathForMax: the maximum path found
    */
-  def getDeepestDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
+  def getDeepestDirectory(l: List[CommitEntry]): (List[CommitEntry], List[CommitEntry], String) = {
     var max = 0
     var pathForMax = ""
-    l.map(x => println(s"liste contient: ${x.filepath}"))
+    var pathForMaxChildren = ""
     l.map(line => if (line.getFileDirectoryPath().split("/").size >= max) {
       max = line.getFileDirectoryPath().split("/").size
+      pathForMaxChildren = pathForMax
       pathForMax = line.getFileDirectoryPath()
     })
-
     val rest = l.filter(x => !x.getFileDirectoryPath().equals(pathForMax))
     val deepest = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
-    val all_path_max = l.filter(x => x.getFileDirectoryPath().equals(pathForMax))
-    all_path_max.map(x => println(s"Le path max deepest= ${x.filepath}"))
     (deepest, rest, pathForMax)
   }
 

@@ -2,7 +2,7 @@ package actions
 
 import java.io.File
 import java.util.{Calendar}
-import objects.{Commit, Entry, Index, Stage, Tree}
+import objects.{Commit, CommitEntry, Index, Stage, Tree}
 import utils.{IOManager, PathManager}
 import scala.annotation.tailrec
 
@@ -17,8 +17,8 @@ object Commit {
   def commit(): Unit = {
     if(Index.getIndexAsEntries().entries.nonEmpty){
       val root_blobs = Stage.retrieveStageRootBlobs()
-      val stage = Stage.getStageAsEntries()
-      val non_root = stage.entries.filter(x => !root_blobs.contains(x))
+      val stage = Stage.getStageAsCommitEntries()
+      val non_root = stage.filter(x => !root_blobs.contains(x))
       val result = addTrees(non_root, List())
       val master_tree = generateCommitTree(result, root_blobs)
       generateCommit(master_tree)
@@ -54,12 +54,10 @@ object Commit {
    * @param root_blobs
    * @return the Tree generated for the commit tree
    */
-  def generateCommitTree(result: List[Entry], root_blobs: List[Entry]): Tree = {
+  def generateCommitTree(result: List[CommitEntry], root_blobs: List[CommitEntry]): Tree = {
     Tree.createTree(result ::: root_blobs)
   }
 
-
-  //TODO - for the Tree the name is the name of the current Entry and not the child tree contained.
   /**
    * Browse all the paths received and builds the tree objects from it
    * @param l
@@ -67,7 +65,7 @@ object Commit {
    * @return a list of the root entries, will be used to create the commit tree
    */
   @tailrec
-  def addTrees(l: List[Entry], commitTree: List[Entry]): List[Entry] = {
+  def addTrees(l: List[CommitEntry], commitTree: List[CommitEntry]): List[CommitEntry] = {
     if(l.isEmpty){
       commitTree
     } else {
@@ -75,13 +73,12 @@ object Commit {
       val hash = Tree.createTree(deepest).id
       if(PathManager.getParentPath(path_max).isEmpty) {
         if (commitTree.isEmpty){
-          addTrees(rest, List(new Entry("tree" ,hash, path_max)))
+          addTrees(rest, List(CommitEntry("tree" ,hash, path_max)))
         } else {
-          addTrees(rest, new Entry("tree" ,hash, path_max) :: commitTree)
+          addTrees(rest, CommitEntry("tree" ,hash, path_max) :: commitTree)
         }
       } else {
-        println(s"GOOD PATH: ${PathManager.getFileDirectoryPath(path_max)}")
-        addTrees(new Entry("tree", hash, PathManager.getParentPath(path_max).get) :: rest, commitTree)
+        addTrees(CommitEntry("tree", hash, PathManager.getParentPath(path_max).get, path_max) :: rest, commitTree)
       }
     }
   }

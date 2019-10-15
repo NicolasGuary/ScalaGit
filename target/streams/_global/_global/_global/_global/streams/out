@@ -2634,3 +2634,632 @@
 [0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Tag.scala, 2019-oct.-15 18:09:57.309 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m264. Monitoring source files for scalagit/assembly...[0m
 [0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(f31e2fa764cfbea98f4de197f65ca41362d31a4f), current stamp: Hash(f93670ef135270db941c59e21acfdfc59fcd8c07))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:36:35.055 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:36:35.055 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m265. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(f93670ef135270db941c59e21acfdfc59fcd8c07), current stamp: Hash(cb0b664e2dcc79fc189e067a268c422986d7cd21))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:37:29.490 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:37:29.490 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m266. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(cb0b664e2dcc79fc189e067a268c422986d7cd21), current stamp: Hash(ef27364b96b1cc274c06a341bcbeff741324cf4d))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:41:40.167 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:41:40.167 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m267. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(ef27364b96b1cc274c06a341bcbeff741324cf4d), current stamp: Hash(073c3986cf8d14788f5decb87a33074096cb122e))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:45:56.742 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:45:56.742 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m268. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(073c3986cf8d14788f5decb87a33074096cb122e), current stamp: Hash(a6cdb686de58b908741754282b1db986fc669206))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:45:59.690 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:45:59.690 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m269. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(a6cdb686de58b908741754282b1db986fc669206), current stamp: Hash(f31e2fa764cfbea98f4de197f65ca41362d31a4f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:46:19.960 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:46:19.960 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m270. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(f31e2fa764cfbea98f4de197f65ca41362d31a4f), current stamp: Hash(09c6a4eed6c4b26c3ad8431518ba67181a792d73))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:46:34.318 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:46:34.318 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m271. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(46d3ab5fa3687001117285a636fc4eeb423476a7), current stamp: Hash(9c225367741dcc61955c81b76b7ce7ebb1baf243))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 18:48:17.641 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 18:48:17.641 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m272. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(09c6a4eed6c4b26c3ad8431518ba67181a792d73), current stamp: Hash(e53e3356884333e41b4a96bb38c72f5a05238142))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:48:24.843 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:48:24.843 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m273. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(e53e3356884333e41b4a96bb38c72f5a05238142), current stamp: Hash(fa513fd177bdaec24bbfadf10eae40f491064c75))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:48:28.007 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:48:28.007 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m274. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(9c225367741dcc61955c81b76b7ce7ebb1baf243), current stamp: Hash(a44367e9f5a2829f2ffb75648ff5e2cf51ff07fb))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 18:56:21.714 CET),Trigger)[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 18:56:21.714 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m275. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(fa513fd177bdaec24bbfadf10eae40f491064c75), current stamp: Hash(09c6a4eed6c4b26c3ad8431518ba67181a792d73))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:56:21.716 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:56:21.716 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m276. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala -> Trigger. Returning: (Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:58:09.719 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:58:09.719 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m277. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(09c6a4eed6c4b26c3ad8431518ba67181a792d73), current stamp: Hash(8a0a96c4011e1b03a6713597e4e19d5a3a1efb23))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:58:44.130 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 18:58:44.130 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m278. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala (previous stamp: Hash(05b040ee8d86bebbd1e379215e96444740a646f9), current stamp: Hash(f8f082d2e688cadc0a89ca1ff51d483e0b379c85))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:58:44.131 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:58:44.131 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m279. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala (previous stamp: Hash(f8f082d2e688cadc0a89ca1ff51d483e0b379c85), current stamp: Hash(4426945b865c38f69adc0e09898159ebaf920533))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:59:01.885 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 18:59:01.885 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m280. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(a44367e9f5a2829f2ffb75648ff5e2cf51ff07fb), current stamp: Hash(478f9b5f17fec924d359320288f054606bab0032))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:00:02.735 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:00:02.735 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m281. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(8a0a96c4011e1b03a6713597e4e19d5a3a1efb23), current stamp: Hash(d856b5db4220252e00ed5d73091155a248654178))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:00:02.736 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:00:02.736 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m282. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(d856b5db4220252e00ed5d73091155a248654178), current stamp: Hash(42945ce8b729988b4ad3a535c2d7eb612e866d9d))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:00:30.432 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:00:30.432 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m283. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(478f9b5f17fec924d359320288f054606bab0032), current stamp: Hash(5bb26f978d6ae1014502e1648050cb133c55612f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:02:26.674 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:02:26.674 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m284. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(42945ce8b729988b4ad3a535c2d7eb612e866d9d), current stamp: Hash(2644e010ab8adae0130956a23e0d51f518f2a1c2))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:02:26.675 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:02:26.675 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m285. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(5bb26f978d6ae1014502e1648050cb133c55612f), current stamp: Hash(e3220edae38b2749e82b63938116c9651c6863bb))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:05:31.830 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:05:31.830 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m286. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala (previous stamp: Hash(4426945b865c38f69adc0e09898159ebaf920533), current stamp: Hash(170adf53fa6a68f41f7c63820b7ffc1fc178f569))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(2644e010ab8adae0130956a23e0d51f518f2a1c2), current stamp: Hash(5f98f90742c4665ab032d934247a953ab1b9f587))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(6ef7d81a2df05b119fc4debfdc9322bc0f7e2c5c), current stamp: Hash(59233d88e84c3b5d74d6bbf4e379b184be16e7b9))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 19:05:31.841 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala, 2019-oct.-15 19:05:31.841 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m287. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(e3220edae38b2749e82b63938116c9651c6863bb), current stamp: Hash(d04a0fad852dc78e185f34faf636ad811f979874))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:06:12.132 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:06:12.132 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m288. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(5f98f90742c4665ab032d934247a953ab1b9f587), current stamp: Hash(c3b6070e1869d6de529a18a92175801361ad16bd))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:06:21.437 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:06:21.437 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m289. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(c3b6070e1869d6de529a18a92175801361ad16bd), current stamp: Hash(a48f12cecc6b25857a9d57f79a51d2b8d90d80c7))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:08:31.774 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:08:31.774 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m290. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(59233d88e84c3b5d74d6bbf4e379b184be16e7b9), current stamp: Hash(1b21962a0d969ed1acfcdceea4d8f9845c151c1a))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:08:57.445 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:08:57.445 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m291. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(1b21962a0d969ed1acfcdceea4d8f9845c151c1a), current stamp: Hash(8fbf799d3b808b4767d8149d5e1fb0f2b03464b1))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:09:28.990 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:09:28.990 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m292. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(8fbf799d3b808b4767d8149d5e1fb0f2b03464b1), current stamp: Hash(1fad6471b55d6f36a8c75d1c2eea00298810bf14))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:09:38.975 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:09:38.975 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m293. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(5f5e614a63aba4a392fc28c707c6baa42ff9ccc2), current stamp: Hash(cfec546f74cb01aa5db3edbcbc6c5c6b7c37b20f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:10:14.174 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:10:14.174 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m294. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(1fad6471b55d6f36a8c75d1c2eea00298810bf14), current stamp: Hash(534e7cee17b58000416e886f559e7cf9f70602d9))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:11:08.716 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:11:08.716 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m295. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(534e7cee17b58000416e886f559e7cf9f70602d9), current stamp: Hash(8f573d3bfe54e93c8e17be528d9309c8b1efeae6))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:14:46.166 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:14:46.166 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m296. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:18:50.332 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:18:50.332 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m297. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(170adf53fa6a68f41f7c63820b7ffc1fc178f569), current stamp: Hash(94dadcba937cee403074af7191394307175dfca2))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(a48f12cecc6b25857a9d57f79a51d2b8d90d80c7), current stamp: Hash(0a3ec8631a3f5854a7a2f869f979def17f147c9c))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(d04a0fad852dc78e185f34faf636ad811f979874), current stamp: Hash(0f504754c8614a26653ec54b9efa8751643fd573))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(8f573d3bfe54e93c8e17be528d9309c8b1efeae6), current stamp: Hash(1efec7a24fb949b28b6bf2e9283d0adaea47b14a))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger, /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Entry2.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:18:57.681 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:18:57.681 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m298. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(cfec546f74cb01aa5db3edbcbc6c5c6b7c37b20f), current stamp: Hash(5f5e614a63aba4a392fc28c707c6baa42ff9ccc2))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:06.063 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:06.063 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m299. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(5f5e614a63aba4a392fc28c707c6baa42ff9ccc2), current stamp: Hash(cfec546f74cb01aa5db3edbcbc6c5c6b7c37b20f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:11.991 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:11.991 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m300. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(cfec546f74cb01aa5db3edbcbc6c5c6b7c37b20f), current stamp: Hash(5f5e614a63aba4a392fc28c707c6baa42ff9ccc2))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:16.723 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:19:16.723 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m301. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(5f5e614a63aba4a392fc28c707c6baa42ff9ccc2), current stamp: Hash(518761038c12858fa23342c127867e486411cfed))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:20:03.943 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:20:03.943 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m302. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala (previous stamp: Hash(518761038c12858fa23342c127867e486411cfed), current stamp: Hash(4197e7fa4dcd494cad58ebfd216d4f022c02fa55))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:20:13.266 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/test/scala/PathManagerTest.scala, 2019-oct.-15 19:20:13.266 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m303. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(423772b63b715504109081dfc800360ed1054378), current stamp: Hash(527c3fc0bc33fd52c333c7a90e942316e2986ae9))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:21:19.912 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:21:19.912 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m304. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(527c3fc0bc33fd52c333c7a90e942316e2986ae9), current stamp: Hash(e02d67c6e5b4e0915870c9090c0ee42cebdd1a8c))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:22:19.604 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:22:19.604 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m305. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(e02d67c6e5b4e0915870c9090c0ee42cebdd1a8c), current stamp: Hash(74598e61a93cd1f0f00fb3d539bd54056389c085))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:22:33.816 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:22:33.816 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m306. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(74598e61a93cd1f0f00fb3d539bd54056389c085), current stamp: Hash(59eb3e3117dc43d0617f0b843d956d40d7239c56))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:24:16.980 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:24:16.980 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m307. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(0a3ec8631a3f5854a7a2f869f979def17f147c9c), current stamp: Hash(fe312a9484f519440132d1a3ae4fcf31b6848977))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:24:16.981 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:24:16.981 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m308. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(59eb3e3117dc43d0617f0b843d956d40d7239c56), current stamp: Hash(b15fca97c8975848c66f70e31db2a2625e9ecc01))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:24:23.930 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:24:23.930 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m309. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(fe312a9484f519440132d1a3ae4fcf31b6848977), current stamp: Hash(edf026660df8787ffa49fbe261d743250c35d321))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:24:53.643 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:24:53.643 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m310. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(edf026660df8787ffa49fbe261d743250c35d321), current stamp: Hash(bd6762a25ad8e2406ecd2d2279f1dfffe39508f4))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:25:09.846 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:25:09.846 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m311. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(1efec7a24fb949b28b6bf2e9283d0adaea47b14a), current stamp: Hash(05ffd450ef6a6280abbdec215c24d4971cf1720d))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:27:16.604 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:27:16.604 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m312. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(94dadcba937cee403074af7191394307175dfca2), current stamp: Hash(069fdb95604c8d808d0ee4c7a56306896fe89155))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:30:47.161 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:30:47.161 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m313. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(b15fca97c8975848c66f70e31db2a2625e9ecc01), current stamp: Hash(1f361e764d2c4fdf6654b0c597f7b72477d32992))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:34:04.568 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:34:04.568 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m314. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala (previous stamp: Hash(1f361e764d2c4fdf6654b0c597f7b72477d32992), current stamp: Hash(ef126bd2ae2803d3b5aba3dccdd4f39f98324209))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:35:46.041 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Stage.scala, 2019-oct.-15 19:35:46.041 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m315. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(069fdb95604c8d808d0ee4c7a56306896fe89155), current stamp: Hash(7ab896943aae509d6ac4b445da534f208d92bddf))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:35:46.043 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:35:46.043 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m316. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(7ab896943aae509d6ac4b445da534f208d92bddf), current stamp: Hash(b5c4a5f1ecfb85ebd20ffea8af1965ae4168d775))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:36:02.438 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:36:02.438 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m317. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala (previous stamp: Hash(0f504754c8614a26653ec54b9efa8751643fd573), current stamp: Hash(d4b6e0c38d910e602a52b4923aa42aa89f08139f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:36:49.761 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/utils/PathManager.scala, 2019-oct.-15 19:36:49.761 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m318. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(b5c4a5f1ecfb85ebd20ffea8af1965ae4168d775), current stamp: Hash(536bf450de280bcb7636ac2e4d9575ca4d4aa955))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:36:49.763 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:36:49.763 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m319. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(05ffd450ef6a6280abbdec215c24d4971cf1720d), current stamp: Hash(47f8d42a9cbd9bd197c366038aaffb4289e97dd9))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:37:13.335 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:37:13.335 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m320. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(536bf450de280bcb7636ac2e4d9575ca4d4aa955), current stamp: Hash(6ac25f47e35fa70714d08159273cbd05a33923e0))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:37:52.888 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:37:52.888 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m321. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala (previous stamp: Hash(6ac25f47e35fa70714d08159273cbd05a33923e0), current stamp: Hash(814d85f6ef005beea4f4c0fe57a3c59a6697f52e))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:37:55.826 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/CommitEntry.scala, 2019-oct.-15 19:37:55.826 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m322. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala (previous stamp: Hash(47f8d42a9cbd9bd197c366038aaffb4289e97dd9), current stamp: Hash(7476cca5b8064ecee0d65e146ddf9b12894142c5))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:38:37.790 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Tree.scala, 2019-oct.-15 19:38:37.790 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m323. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscalagit / assembly - Accepted event for /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala (previous stamp: Hash(bd6762a25ad8e2406ecd2d2279f1dfffe39508f4), current stamp: Hash(7546ad5220d8e70abb0c04898291459d752019f0))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala -> Trigger. Returning: (Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:38:51.784 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala, 2019-oct.-15 19:38:51.784 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m324. Monitoring source files for scalagit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m     Press <enter> to interrupt or '?' for more options.[0m

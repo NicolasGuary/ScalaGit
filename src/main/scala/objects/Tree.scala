@@ -10,13 +10,13 @@ import utils.IOManager
  */
 
 
-case class Tree(var items: List[Entry] = List(), var id: String = "") {
+case class Tree(var items: List[CommitEntry] = List(), var id: String = "") {
 
-  def addElement(items: Entry): List[Entry] = {
-    new Entry(items.content_type, items.hash, items.filepath) :: this.items
+  def addElement(items: CommitEntry): List[CommitEntry] = {
+    CommitEntry(items.content_type, items.hash, items.filepath, items.childpath) :: this.items
   }
 
-  def set_items (items: List[Entry]): Unit = {
+  def set_items (items: List[CommitEntry]): Unit = {
     this.items = items
   }
 
@@ -24,18 +24,18 @@ case class Tree(var items: List[Entry] = List(), var id: String = "") {
     this.id = id
   }
 
-  def saveTreeFile(id: String, items: List[Entry]): Unit = {
+  def saveTreeFile(id: String, items: List[CommitEntry]): Unit = {
     IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
   }
 
-  def createTreeId(items: List[Entry]): String = {
+  def createTreeId(items: List[CommitEntry]): String = {
     val content = treeContent(items)
     IOManager.hash(content)
   }
 
-  def treeContent(items: List[Entry]): String = {
+  def treeContent(items: List[CommitEntry]): String = {
     var acc = ""
-    items.map(x => acc = acc + x.get_content_type() + " " + x.get_hash()+ " "+ x.getFileName() + "\n")
+    items.map(x => acc = acc + x.content_type + " " + x.hash+ " "+ x.getFileName() + "\n")
     acc
   }
 }
@@ -47,14 +47,13 @@ object Tree {
   }
 
   //Creates a new tree with a list of entries and save it in .sgit/object/tree
-  def createTree(entries: List[Entry]): Tree = {
+  def createTree(entries: List[CommitEntry]): Tree = {
     val tree = new Tree()
     entries.map(element => tree.set_items(tree.addElement(element)))
-    entries.map(el => println(s"le tree reçoit: ${el.filepath}"))
-    println("-----------------------------")
     val hash = tree.createTreeId(tree.items)
     tree.set_id(hash)
     tree.saveTreeFile(tree.id, tree.items)
     tree
   }
 }
+
