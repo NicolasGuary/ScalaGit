@@ -20,6 +20,7 @@ object Branch {
 
   /**
    * Lists all the branches created, display the current branch and the latest commit hash for each branch
+   * TODO - Add all the tags
    */
   def branchAllVerbose(): Unit = {
     val branches = IOManager.getAllFilesFromCurrentDirectory(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads")

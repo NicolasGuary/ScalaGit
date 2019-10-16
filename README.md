@@ -9,8 +9,8 @@ This project is part of the functional programming course.
 #### Local Changes:
 * sgit status ✅
 * sgit diff ✅
-* sgit add <filename/filenames or . or regexp>  ✅ (⚠️ regexp to handle)
-* git commit ✅ (⚠️ Folder names in Trees to correct)
+* sgit add <filename/filenames or . or regexp>  ✅
+* git commit ✅
 
 #### Commit History:
 * sgit log (Show all commits starting with newest) ✅

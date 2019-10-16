@@ -6,7 +6,7 @@ import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
 import scala.annotation.tailrec
 import better.files.{File => BFile}
-import objects.Entry
+import objects.{Entry}
 
 // TODO - clean unused methods that were implemented first because I thought they would be useful...
 

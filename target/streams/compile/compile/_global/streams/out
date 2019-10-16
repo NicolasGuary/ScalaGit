@@ -1,4 +1,6 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Commit.scala:5:17: imported `Commit` is permanently hidden by definition of object Commit in package actions[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport objects.{Commit, CommitEntry, Index, Stage, Tree}[0m
-[0m[[0m[33mwarn[0m] [0m[0m                ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Add.scala:16:29: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[better.files.File][0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m      else if (evaluateRegex(path)){[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

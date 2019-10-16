@@ -3,6 +3,7 @@ package actions
 import java.io.File
 import objects.Blob
 import utils.IOManager
+import better.files.{File => BFile}
 
 object Add {
 
@@ -12,8 +13,10 @@ object Add {
       if(new File(path).exists()) {
           doAdd(path)
       }
-      else {
-          println(s"Error - File ${path} doesn't exist")
+      else if (! evaluateRegex(path).isEmpty){
+        evaluateRegex(path).map(item => doAdd(item.pathAsString))
+      } else {
+        println(s"Error - File ${path} doesn't exist")
       })
   }
 
@@ -25,6 +28,17 @@ object Add {
     } else if (file.isFile){
         Blob.convertToBlob(file)
       }
+  }
+
+  /**
+   *
+   * @param regex
+   * @return a list of files matching the regex passed in arguments
+   */
+  def evaluateRegex(regex: String) = {
+    val repo = BFile(IOManager.getRepoDirPath().get)
+    val results = repo.glob(regex).toList
+    results
   }
 }
 
