@@ -36,10 +36,10 @@ object Status {
 
   def notStaged(working_directory: List[Entry], stage: List[Entry]) = {
     println("Changes not staged for commit:\n  (use \"sgit add <file>...\" to update what will be committed)")
-    val hashes = stage.map(x => x.get_hash())
-    val paths = stage.map(x => x.get_filepath())
+    val hashes = stage.map(x => x.hash)
+    val paths = stage.map(x => x.filepath)
     working_directory
-      .filter(entry => paths.contains(entry.getFileName()) && !hashes.contains(entry.get_hash()))
+      .filter(entry => paths.contains(entry.getFileName()) && !hashes.contains(entry.hash))
       .map(entry => println(s"   ${RED}modified: ${entry.getFileName()}${RESET}"))
   }
 
@@ -47,6 +47,6 @@ object Status {
     println("Untracked files:\n  (use \"sgit add <file>...\" to include in what will be committed)")
     working_directory
       .filter(entry => !stage.contains(entry))
-      .map(entry => println(s"   ${RED}${entry.get_filepath()}${RESET}"))
+      .map(entry => println(s"   ${RED}${entry.filepath}${RESET}"))
   }
 }

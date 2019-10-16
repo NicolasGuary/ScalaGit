@@ -1,9 +1,13 @@
 package utils.diff
 
-import Console.{GREEN, BLUE, RED, RESET}
-//Implementation of Myer's diff algorithm
-//Using the tutorial found at https://blog.jcoglan.com/2017/02/12/the-myers-diff-algorithm-part-1/
+import objects.{Blob, Entry}
+import utils.IOManager
+import Console.{BLUE, GREEN, RED, RESET}
 
+/**
+ * Implementation of Myer's diff algorithm
+ * Using the tutorial found at https://blog.jcoglan.com/2017/02/12/the-myers-diff-algorithm-part-1/
+ */
 object Differ {
 
   /**
@@ -11,7 +15,6 @@ object Differ {
    * @param file1
    * @param file2
    * @param filepath
-   *
    */
   def displayDiff(file1: Seq[String], file2: Seq[String], filepath: String): Unit = {
     println(s"${BLUE}Differences found in file ${filepath}${RESET}")
@@ -21,6 +24,23 @@ object Differ {
       case Operations.REMOVE => println(s"${RED}${displayOperation(delta.diff)} ${delta.content}${RESET}")
       case _ => println(s"${displayOperation(delta.diff)} ${delta.content}")
     })
+  }
+
+  def diffCommit(commit: List[Entry], old_commit: List[Entry]) = {
+    val commit_blobs = Blob.getAllBlob(commit)
+    val old_commit_blobs = Blob.getAllBlob(old_commit)
+    if(!old_commit_blobs.isEmpty){
+      val all_commits = commit_blobs.zip(old_commit_blobs)
+      val commits = all_commits.filter(item => !item._1.hash.equals(item._2.hash))
+      commits
+        .map(tuple =>
+          displayDiff(IOManager.readBlob(tuple._2.hash).split("\n"),
+            IOManager.readBlob(tuple._1.hash).split("\n"), tuple._2.filepath))
+    } else {
+      commit_blobs
+        .map(blob =>
+          displayDiff(Seq(), IOManager.readBlob(blob.hash).split("\n"), blob.filepath))
+    }
   }
 
   /**

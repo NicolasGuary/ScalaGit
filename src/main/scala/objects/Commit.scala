@@ -8,11 +8,11 @@ import utils.IOManager
 /**
  * This is the class that handles the commit
  *
- * @param id
- * @param master_tree
- * @param parent_commit_id
- * @param author
- * @param timestamp
+ * @param id commit hash
+ * @param master_tree commit tree hash
+ * @param parent_commit_id hash of the parent commit
+ * @param author constant. The name of the comitter
+ * @param timestamp date & time of the commit creation
  */
 case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var parent_commit_id: String ="", var author: String = "NicolasGuary", var timestamp: String="") {
 

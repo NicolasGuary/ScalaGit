@@ -152,7 +152,11 @@ object ScoptParser extends App {
           else Branch.branch(config.branchName)
         }
         case "log" => {
-          Log.log()
+          if(config.patch){
+            Log.logPatch()
+          } else {
+            Log.log()
+          }
         }
         case "tag" =>
           if (config.tagName.isEmpty)Tag.listAllTags()

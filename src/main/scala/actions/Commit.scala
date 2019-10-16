@@ -2,7 +2,7 @@ package actions
 
 import java.io.File
 import java.util.{Calendar}
-import objects.{Commit, CommitEntry, Index, Stage, Tree}
+import objects.{Commit, Entry, Index, Stage, Tree}
 import utils.{IOManager, PathManager}
 import scala.annotation.tailrec
 
@@ -54,7 +54,7 @@ object Commit {
    * @param root_blobs
    * @return the Tree generated for the commit tree
    */
-  def generateCommitTree(result: List[CommitEntry], root_blobs: List[CommitEntry]): Tree = {
+  def generateCommitTree(result: List[Entry], root_blobs: List[Entry]): Tree = {
     Tree.createTree(result ::: root_blobs)
   }
 
@@ -65,7 +65,7 @@ object Commit {
    * @return a list of the root entries, will be used to create the commit tree
    */
   @tailrec
-  def addTrees(l: List[CommitEntry], commitTree: List[CommitEntry]): List[CommitEntry] = {
+  def addTrees(l: List[Entry], commitTree: List[Entry]): List[Entry] = {
     if(l.isEmpty){
       commitTree
     } else {
@@ -73,12 +73,12 @@ object Commit {
       val hash = Tree.createTree(deepest).id
       if(PathManager.getParentPath(path_max).isEmpty) {
         if (commitTree.isEmpty){
-          addTrees(rest, List(CommitEntry("tree" ,hash, path_max)))
+          addTrees(rest, List(Entry("tree" ,hash, path_max)))
         } else {
-          addTrees(rest, CommitEntry("tree" ,hash, path_max) :: commitTree)
+          addTrees(rest, Entry("tree" ,hash, path_max) :: commitTree)
         }
       } else {
-        addTrees(CommitEntry("tree", hash, PathManager.getParentPath(path_max).get, path_max) :: rest, commitTree)
+        addTrees(Entry("tree", hash, PathManager.getParentPath(path_max).get, path_max) :: rest, commitTree)
       }
     }
   }

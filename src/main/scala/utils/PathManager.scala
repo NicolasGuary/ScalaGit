@@ -2,7 +2,7 @@ package utils
 
 import java.io.File
 
-import objects.{Entry, CommitEntry}
+import objects.Entry
 import better.files.{File => BFile}
 
 object PathManager {
@@ -36,7 +36,7 @@ object PathManager {
    *          rest: all the others CommitEntry that are not in deepest (either same size but different or shorter)
    *          pathForMax: the maximum path found
    */
-  def getDeepestDirectory(l: List[CommitEntry]): (List[CommitEntry], List[CommitEntry], String) = {
+  def getDeepestDirectory(l: List[Entry]): (List[Entry], List[Entry], String) = {
     var max = 0
     var pathForMax = ""
     var pathForMaxChildren = ""
@@ -54,7 +54,11 @@ object PathManager {
     !path.contains(File.separator)
   }
 
-  //Returns "tree" or "blob" regarding of the type of the hash
+  /**
+   *
+   * @param hash
+   * @return "tree", "blob" or "undefined" depending of the hash
+   */
   def natureOfHash(hash: String): String = {
     if(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}$hash").exists){
       "tree"

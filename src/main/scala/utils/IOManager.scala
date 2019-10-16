@@ -57,9 +57,13 @@ object IOManager {
     bw.close()
   }
 
-def readFile(file: File): String = {
-  new String(Files.readAllBytes(Paths.get(file.getAbsolutePath)))
-}
+  def readFile(file: File): String = {
+    new String(Files.readAllBytes(Paths.get(file.getAbsolutePath)))
+  }
+
+  def readBlob(hash: String): String = {
+    readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${hash}"))
+  }
 
   def removeFile(file: File): Unit = {
     Files.delete(Paths.get(file.getAbsolutePath))
@@ -110,23 +114,23 @@ def readFile(file: File): String = {
     path.exists && path.isDirectory
   }
 
-// Method that explores all the folder from the path in argument.
-// It should also omit .sgit and .git folders so it doesn't add them to the repo.
-// This method only retrieves the files
+  // Method that explores all the folder from the path in argument.
+  // It should also omit .sgit and .git folders so it doesn't add them to the repo.
+  // This method only retrieves the files
   def exploreDirectory(path: File): List[File] = {
-      val allFiles = path.listFiles().toList
-      allFiles.flatMap(item =>
-          if (!ignore.contains(item.getName)) {
-            if (item.isDirectory) {
-              exploreDirectory(item)
-            }
-            else {
-              List(item)
-            }
-          } else {
-            List[File]()
-          }
-        )
+    val allFiles = path.listFiles().toList
+    allFiles.flatMap(item =>
+      if (!ignore.contains(item.getName)) {
+        if (item.isDirectory) {
+          exploreDirectory(item)
+        }
+        else {
+          List(item)
+        }
+      } else {
+        List[File]()
+      }
+    )
   }
 
   // Method that explores all the folder from the path in argument.
@@ -141,7 +145,7 @@ def readFile(file: File): String = {
           exploreDirectoryAsEntries(item)
         }
         else {
-          List(new Entry("blob", getHashFromFile(item), BFile(basedir).relativize(BFile(item.getPath)).toString))
+          List(Entry("blob", getHashFromFile(item), BFile(basedir).relativize(BFile(item.getPath)).toString))
         }
       } else {
         List[Entry]()

@@ -17,7 +17,7 @@ object Diff {
     changed_entries
       .map(entry =>
         Differ.displayDiff(
-          IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${entry.hash}")).split("\n"),
+          IOManager.readBlob(entry.hash).split("\n"),
             IOManager.readFile(new File(entry.filepath)).split("\n"), entry.filepath))
   }
 }

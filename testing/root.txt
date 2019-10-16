@@ -1,2 +1,2 @@
-file root.txt
-This file is edited my friend
+this is the file: file root.txt
+This file is edited

@@ -33,7 +33,7 @@ class EntryTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndA
     it("you should get b/c") {
       val entry = new Entry("blob", "1c", "testing/b/c/file_in_c.txt")
       println(entry.getFileDirectoryPath())
-      println(s"est-ce un fichier ? ${new File(entry.get_filepath()).isFile}")
+      println(s"est-ce un fichier ? ${new File(entry.filepath).isFile}")
       assert(entry.getFileDirectoryPath().equals("testing/b/c"))
     }
   }

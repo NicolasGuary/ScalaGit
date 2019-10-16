@@ -1,29 +1,33 @@
-[0m[[0m[0mdebug[0m] [0m[0mThe objects.CommitEntry has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(get_hash,[Default]), UsedName(get_content_type,[Default]), UsedName(get_filepath,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe utils.diff.Differ$ has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(diffCommit,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.CommitEntry: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) utils.diff.Differ$: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.CommitEntry.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of PathManagerTest. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe objects.Stage$ has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(retrieveStageRootBlobs,[Default]), UsedName(getStageAsCommitEntries,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) utils.diff.Differ$.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of DiffTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe utils.diff.Differ has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(diffCommit,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.Stage$: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) utils.diff.Differ: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.Stage$.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) utils.diff.Differ.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of DiffTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe objects.Entry has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(set_hash,[Default]), UsedName(set_content_type,[Default]), UsedName(set_filepath,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.Entry: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.Entry.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of StageTest. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe objects.CommitEntry$ has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(get_hash,[Default]), UsedName(get_content_type,[Default]), UsedName(get_filepath,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.CommitEntry$: Set(); now invalidating by inheritance (internally).[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.CommitEntry$.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of PathManagerTest. This dependency is not being considered for invalidation.[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe objects.Stage has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(retrieveStageRootBlobs,[Default]), UsedName(getStageAsCommitEntries,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of EntryTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe objects.Entry$ has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(set_hash,[Default]), UsedName(set_content_type,[Default]), UsedName(set_filepath,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.Stage: Set(); now invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) objects.Entry$: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.Stage.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) objects.Entry$.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of StageTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of PathManagerTest. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of EntryTest. This dependency is not being considered for invalidation.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

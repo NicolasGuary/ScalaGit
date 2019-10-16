@@ -4,14 +4,13 @@ import java.io.File
 import java.nio.file.{Files, Paths}
 import utils.IOManager
 
-/*
-* This class is used to manage the content of the INDEX file
-* It can read, edit or clean this file when changes are made over time
-* The INDEX is used to know the files added for the current commit. It is cleaned after each commit
+/**
+ * This class is used to manage the content of the INDEX file
+ * It can read, edit or clean this file when changes are made over time
+ * The INDEX is used to know the files added for the current commit. It is cleaned after each commit
+ * @param entries
  */
 case class Index(var entries: List[Entry] = List())
-
-
 
 object Index {
 
@@ -27,14 +26,14 @@ object Index {
 
   //Returns a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
   def updateEntry(new_entry: Entry, current_stage: Index): Index = {
-    val filtered_entries = current_stage.entries.filter(entry => !entry.get_filepath().equals(new_entry.get_filepath()))
+    val filtered_entries = current_stage.entries.filter(entry => !entry.filepath.equals(new_entry.filepath))
     val new_entries = filtered_entries :+ new_entry
     new Index(new_entries)
   }
 
   //Tells if the path is already in the index
   def pathStaged(entry: Entry, current_index: Index): Boolean = {
-    val res = current_index.entries.filter(x => x.get_filepath().equals(entry.get_filepath()))
+    val res = current_index.entries.filter(x => x.filepath.equals(entry.filepath))
     res.nonEmpty
   }
 
@@ -47,7 +46,7 @@ object Index {
       val paths = index_content.map(x => x(0)).toList
       val hashs = index_content.map(x => x(1)).toList
       val blob = List.fill(paths.size)("blob")
-      val entries = (paths, hashs, blob).zipped.toList.map(x => new Entry(x._3, x._2, x._1))
+      val entries = (paths, hashs, blob).zipped.toList.map(x => Entry(x._3, x._2, x._1))
       new Index(entries = entries)
     } else {
       new Index()

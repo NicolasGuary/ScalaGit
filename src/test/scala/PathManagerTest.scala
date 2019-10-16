@@ -1,13 +1,13 @@
 import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
 import utils.PathManager
-import objects.CommitEntry
+import objects.Entry
 
 class PathManagerTest extends FunSpec with Matchers with GivenWhenThen with BeforeAndAfter{
   describe("If you try to get the deepest directory in testing") {
     it("you should get testing/b/c") {
-      val a = CommitEntry("tree", "1c", "testing/a")
-      val b = CommitEntry("tree", "1c", "testing/b")
-      val c = CommitEntry("tree", "1c", "testing/b/c")
+      val a = Entry("tree", "1c", "testing/a")
+      val b = Entry("tree", "1c", "testing/b")
+      val c = Entry("tree", "1c", "testing/b/c")
 
       val dirs = List(a,b,c)
       assert(PathManager.getDeepestDirectory(dirs)._1.equals(List(c)))

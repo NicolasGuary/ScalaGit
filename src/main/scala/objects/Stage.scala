@@ -4,9 +4,10 @@ import java.io.File
 import java.nio.file.{Files, Paths}
 import utils.{IOManager, PathManager}
 
-/*
-* This class is used to manage the content of the STAGE file
-* It can read, edit or clean this file when changes are made over time
+/**
+ * This class is used to manage the content of the STAGE file
+ * It can read, edit or clean this file when changes are made over time
+ * @param entries
  */
 case class Stage(var entries: List[Entry] = List())
 
@@ -31,13 +32,13 @@ object Stage {
 
   //Tells if the path is already in the stage
   def pathStaged(entry: Entry, current_stage: Stage): Boolean = {
-    val res = current_stage.entries.filter(x => x.get_filepath().equals(entry.get_filepath()))
+    val res = current_stage.entries.filter(x => x.filepath.equals(entry.filepath))
     res.nonEmpty
   }
 
   //Returns a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
   def updateEntry(new_entry: Entry, current_stage: Stage): Stage = {
-    val filtered_entries = current_stage.entries.filter(entry => !entry.get_filepath().equals(new_entry.get_filepath()))
+    val filtered_entries = current_stage.entries.filter(entry => !entry.filepath.equals(new_entry.filepath))
     val new_entries = filtered_entries :+ new_entry
     new Stage(new_entries)
   }
@@ -54,7 +55,7 @@ object Stage {
       val paths = stage_content.map(x => x(0)).toList
       val hashs = stage_content.map(x => x(1)).toList
       val blob = List.fill(paths.size)("blob")
-      val entries = (paths, hashs, blob).zipped.toList.map(x => new Entry(x._3, x._2, x._1))
+      val entries = (paths, hashs, blob).zipped.toList.map(x => Entry(x._3, x._2, x._1))
       val entries_stage = new Stage(entries = entries)
       val result = entries_stage.copy()
       result
@@ -68,7 +69,7 @@ object Stage {
    * Will be used to create the commit tree, because it needs to point to these blobs
    * @return a list of CommitEntries
    */
-  def retrieveStageRootBlobs(): List[CommitEntry] = {
+  def retrieveStageRootBlobs(): List[Entry] = {
     val stage = Stage.getStageAsCommitEntries()
     //Filter to keep only the root blobs
     stage.filter(x => PathManager.isRootItem(x.filepath))
@@ -78,7 +79,7 @@ object Stage {
    * This reads from the STAGE file and create a list with CommitEntry used to generate the Trees during commit
    * @return the stage as a list of CommitEntries
    */
-  def getStageAsCommitEntries(): List[CommitEntry] = {
+  def getStageAsCommitEntries(): List[Entry] = {
     val stage = new File(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE")
     val res = new String(Files.readAllBytes(Paths.get(stage.getAbsolutePath)))
     if (!res.isEmpty){
@@ -86,13 +87,11 @@ object Stage {
       val paths = stage_content.map(x => x(0)).toList
       val hashs = stage_content.map(x => x(1)).toList
       val blob = List.fill(paths.size)("blob")
-      val entries = (paths, hashs, blob).zipped.toList.map(x => CommitEntry(x._3, x._2, x._1, x._1))
+      val entries = (paths, hashs, blob).zipped.toList.map(x => Entry(x._3, x._2, x._1, x._1))
       entries
     } else {
       List()
     }
   }
-
-
 }
 

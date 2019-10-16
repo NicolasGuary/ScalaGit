@@ -8,7 +8,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 691fece4e8785b6de28f9cd1def968ad4e8708f7[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 452eb6371e9d394533e3de7ca794badbeffde535[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/Final/ScalaGit/target/scala-2.13/SGit-assembly-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LICENSE_scala-library-2.13.1[0m
@@ -277,10 +277,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/objects/Commit$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	objects/Commit.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/objects/Commit.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	objects/CommitEntry$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/objects/CommitEntry$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	objects/CommitEntry.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/objects/CommitEntry.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	objects/Entry$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/Nico/IdeaProjects/Final/ScalaGit/target/streams/_global/assemblyOption/_global/streams/assembly/99672b0227afe265c4fad8e05c31b0768837f29d_dir/objects/Entry$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	objects/Entry.class[0m
