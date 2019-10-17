@@ -8,7 +8,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 452eb6371e9d394533e3de7ca794badbeffde535[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 2459a7559d2e071765da980b0ce919cc08edf8ae[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/Final/ScalaGit/target/scala-2.13/SGit-assembly-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LICENSE_scala-library-2.13.1[0m

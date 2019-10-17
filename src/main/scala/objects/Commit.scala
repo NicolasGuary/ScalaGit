@@ -1,15 +1,14 @@
 package objects
 
 import java.io.File
-import actions.Branch
 import utils.IOManager
-
+import objects.Branch
 
 /**
  * This is the class that handles the commit
  *
  * @param id commit hash
- * @param master_tree commit tree hash
+ * @param master_tree commit tree
  * @param parent_commit_id hash of the parent commit
  * @param author constant. The name of the comitter
  * @param timestamp date & time of the commit creation

@@ -44,7 +44,7 @@ object IOManager {
   //Write the content of s into filename
   def writeFile(filename: String, s: String): Unit = {
     val file = new File(filename)
-    val bw = new BufferedWriter(new FileWriter(file))
+    val bw = new BufferedWriter(new FileWriter(file, false))
     bw.write(s)
     bw.close()
   }
@@ -63,6 +63,10 @@ object IOManager {
 
   def readBlob(hash: String): String = {
     readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${hash}"))
+  }
+
+  def readCommit(hash: String): String = {
+    readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${hash}"))
   }
 
   def removeFile(file: File): Unit = {

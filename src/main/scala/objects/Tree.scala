@@ -14,6 +14,7 @@ case class Tree(var items: List[Entry] = List(), var id: String = "") {
     Entry(items.content_type, items.hash, items.filepath, items.childpath) :: this.items
   }
 
+  //TODO - Remove setters (not RT compliant)
   def set_items (items: List[Entry]): Unit = {
     this.items = items
   }
@@ -23,7 +24,7 @@ case class Tree(var items: List[Entry] = List(), var id: String = "") {
   }
 
   def saveTreeFile(id: String, items: List[Entry]): Unit = {
-    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
+    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
   }
 
   def createTreeId(items: List[Entry]): String = {

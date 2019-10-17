@@ -1,7 +1,7 @@
 package actions
 
 import Console.{GREEN, RED, RESET}
-import objects.{Entry, Index, Stage}
+import objects.{Entry, Index, Stage, Branch}
 import utils.IOManager
 import java.io.File
 object Status {

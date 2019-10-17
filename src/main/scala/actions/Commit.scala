@@ -1,9 +1,11 @@
 package actions
 
 import java.io.File
-import java.util.{Calendar}
-import objects.{Commit, Entry, Index, Stage, Tree}
+import java.util.Calendar
+
+import objects.{Branch, Commit, Entry, Index, Stage, Tree}
 import utils.{IOManager, PathManager}
+
 import scala.annotation.tailrec
 
 object Commit {
@@ -14,20 +16,28 @@ object Commit {
   /**
    * handles the sgit commit command.
    */
+    //TODO - show total insertions of the commit.
   def commit(): Unit = {
-    if(Index.getIndexAsEntries().entries.nonEmpty){
-      val root_blobs = Stage.retrieveStageRootBlobs()
-      val stage = Stage.getStageAsCommitEntries()
-      val non_root = stage.filter(x => !root_blobs.contains(x))
-      val result = addTrees(non_root, List())
-      val master_tree = generateCommitTree(result, root_blobs)
-      generateCommit(master_tree)
-      //Everything in the stage has been commit, we can now clear the index.
-      Index.clear()
-    } else {
+    val entries = Index.getIndexAsEntries().entries
+    if(entries.isEmpty){
       println("Warning - Nothing to commit \n  (use \"sgit add <file>...\" to stage files to be committed)")
     }
+    else {
+      if(!Index.entriesChanged(entries)){
+        println(s"On branch ${Branch.getCurrentBranch().name}\nNothing to commit, working tree clean")
+      } else {
+        val root_blobs = Stage.retrieveStageRootBlobs()
+        val stage = Stage.getStageAsCommitEntries()
+        val non_root = stage.filter(x => !root_blobs.contains(x))
+        val result = addTrees(non_root, List())
+        val master_tree = generateCommitTree(result, root_blobs)
+        generateCommit(master_tree)
+        //Everything in the stage has been commit, we can now clear the index.
+        Index.clear()
+      }
+    }
   }
+
 
   /**
    * @param master_tree

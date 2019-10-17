@@ -76,8 +76,8 @@ object Stage {
   }
 
   /**
-   * This reads from the STAGE file and create a list with CommitEntry used to generate the Trees during commit
-   * @return the stage as a list of CommitEntries
+   * This reads from the STAGE file and create a list with Entry used to generate the Trees during commit
+   * @return the stage as a list of Entries
    */
   def getStageAsCommitEntries(): List[Entry] = {
     val stage = new File(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE")

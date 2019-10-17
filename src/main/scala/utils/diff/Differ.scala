@@ -17,19 +17,24 @@ object Differ {
    * @param filepath
    */
   def displayDiff(file1: Seq[String], file2: Seq[String], filepath: String): Unit = {
-    println(s"${BLUE}Differences found in file ${filepath}${RESET}")
+    println(s"${BLUE}Diff: ${filepath}${RESET}")
     val deltas = diffFiles(file1, file2)
     deltas.map(delta => delta.diff match {
-      case Operations.ADD => println(s"${GREEN}${displayOperation(delta.diff)} ${delta.content}${RESET}")
-      case Operations.REMOVE => println(s"${RED}${displayOperation(delta.diff)} ${delta.content}${RESET}")
-      case _ => println(s"${displayOperation(delta.diff)} ${delta.content}")
+      case Operations.ADD => println(s"    ${GREEN}${displayOperation(delta.diff)} ${delta.content}${RESET}")
+      case Operations.REMOVE => println(s"    ${RED}${displayOperation(delta.diff)} ${delta.content}${RESET}")
+      case Operations.KEEP => println(s"    ${displayOperation(delta.diff)} ${delta.content}")
     })
   }
 
+  /**
+   * Displays the diff between blobs from two commits
+   * @param commit the first commit, as a list of Entry
+   * @param old_commit the parent commit, as a list of Entry
+   */
   def diffCommit(commit: List[Entry], old_commit: List[Entry]) = {
     val commit_blobs = Blob.getAllBlob(commit)
     val old_commit_blobs = Blob.getAllBlob(old_commit)
-    if(!old_commit_blobs.isEmpty){
+    if(old_commit_blobs.nonEmpty){
       val all_commits = commit_blobs.zip(old_commit_blobs)
       val commits = all_commits.filter(item => !item._1.hash.equals(item._2.hash))
       commits
@@ -41,6 +46,59 @@ object Differ {
         .map(blob =>
           displayDiff(Seq(), IOManager.readBlob(blob.hash).split("\n"), blob.filepath))
     }
+  }
+
+
+  /**
+   * Displays the stats between blobs from two commits
+   *
+   * @param commit the first commit, as a list of Entry
+   * @param old_commit the parent commit, as an Option for a list of Entry (first commit doesn't have parent)
+   */
+  def statCommit(commit: List[Entry], old_commit: Option[List[Entry]]) = {
+    val commit_blobs = Blob.getAllBlob(commit)
+    val max_path_size = commit_blobs.maxBy(_.filepath.length).filepath.length
+
+    old_commit match {
+      case Some(old: List[Entry]) => {
+        val old_commit_blobs = Blob.getAllBlob(old)
+        val all_commits = commit_blobs.zip(old_commit_blobs)
+        val commits = all_commits.filter(item => !item._1.hash.equals(item._2.hash))
+        val total = commits
+          .map(tuple =>
+            displayStat(IOManager.readBlob(tuple._2.hash).split("\n"),
+              IOManager.readBlob(tuple._1.hash).split("\n"), tuple._2.filepath, max_path_size))
+        val additions = total.map(list => list.map(item => item._1)).map(_.sum).sum
+        val deletions = total.map(list => list.map(item => item._2)).map(_.sum).sum
+        printTotalStatistics(total.length, additions, deletions)
+      }
+      case None => {
+       val total = commit_blobs
+          .map(blob =>
+            displayStat(Seq(), IOManager.readBlob(blob.hash).split("\n"), blob.filepath, max_path_size))
+        val additions = total.map(list => list.map(item => item._1)).map(_.sum).sum
+        val deletions = total.map(list => list.map(item => item._2)).map(_.sum).sum
+        printTotalStatistics(total.length, additions, deletions)
+      }
+    }
+  }
+
+  def printTotalStatistics(total: Int, additions: Int, deletions: Int): Unit = {
+    println(s"$total file changed, $additions insertions(+), $deletions deletions(-)")
+  }
+
+  /**
+   * Show the stats between for two files (counts additions, deletions and prints the total)
+   * @param file1 original file
+   * @param file2 updated file
+   * @param filepath path for the files
+   */
+  def displayStat(file1: Seq[String], file2: Seq[String], filepath: String, maxlength: Int): List[(Int, Int)] = {
+    val deltas = diffFiles(file1, file2)
+    val added = deltas.count(_.diff.equals(Operations.ADD))
+    val deleted = deltas.count(_.diff.equals(Operations.REMOVE))
+    println(s"$filepath ${" "*(maxlength - filepath.length)}  | ${added + deleted} ${GREEN}${"+"*added}${RESET} ${RED}${"-"*deleted}${RESET}")
+    List((added, deleted))
   }
 
   /**

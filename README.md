@@ -15,7 +15,7 @@ This project is part of the functional programming course.
 #### Commit History:
 * sgit log (Show all commits starting with newest) ✅
 * sgit log -p (Show changes overtime) ✅
-* sgit log --stat (Show stats about changes overtime) ⏳
+* sgit log --stat (Show stats about changes overtime) ✅
 
 #### Branches and Tags
 * sgit branch <branch name> (Create a new branch) ✅

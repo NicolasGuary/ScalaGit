@@ -2,16 +2,14 @@ package actions
 
 import java.io.File
 
-import actions.Branch.{getCurrentBranch, getCurrentCommitHash}
+import objects.Branch
 import utils.IOManager
-
-import scala.Console.{GREEN, RESET}
 
 object Tag {
 
   def tag(tagName: String): Unit = {
     val new_tag = s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}tags${File.separator}$tagName"
-    val current_commit = getCurrentCommitHash()
+    val current_commit = Branch.getCurrentCommitHash()
     current_commit match {
       case None => println("fatal: Failed to resolve 'HEAD' as a valid ref. \nYou should try to do a commit first")
       case commit => {

@@ -154,9 +154,11 @@ object ScoptParser extends App {
         case "log" => {
           if(config.patch){
             Log.logPatch()
+          } else if(config.stat) {
+            Log.logStat()
           } else {
-            Log.log()
-          }
+              Log.log()
+            }
         }
         case "tag" =>
           if (config.tagName.isEmpty)Tag.listAllTags()

@@ -14,7 +14,7 @@ object Blob {
    */
   def convertToBlob(file: File): Unit = {
     val hash = IOManager.getHashFromFile(file)
-    val entry = new Entry("blob", hash, IOManager.relativize(file.getPath))
+    val entry = Entry("blob", hash, IOManager.relativize(file.getPath))
     val stage = Stage.getStageAsEntries()
     val index = Index.getIndexAsEntries()
     if(Stage.pathStaged(entry, stage)){

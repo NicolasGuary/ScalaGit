@@ -3,7 +3,7 @@ package actions
 import java.io.File
 
 import Console.{RESET, YELLOW}
-import objects.{Commit, Tree}
+import objects.{Commit, Tree, Branch}
 import utils.IOManager
 import utils.diff.Differ
 
@@ -20,23 +20,12 @@ object Log {
     commits.map(commit => printPatch(commit, commits))
   }
 
-  def logStat() = {
-    val commits = getAllCommits().reverse
-    commits.map(commit => printStat(commit, commits))
-  }
-
-  def printStat(commit: Commit, commits: List[Commit]) = {
-    //Print the log for the Commit
-    printCommitLog(commit)
-
-  }
-
   /**
-   * TODO - It receive multiples Entry objects for the same Blob.
    * @param commit
    * @param commits
    * @return
    */
+    //TODO - refactor with Option and pattern matching in Differ
   def printPatch(commit: Commit, commits: List[Commit]) = {
     //Print the log for the Commit
     printCommitLog(commit)
@@ -46,6 +35,23 @@ object Log {
     parent match {
       case Some(par_commit: Commit) => Differ.diffCommit(commit.master_tree.items, par_commit.master_tree.items)
       case None => Differ.diffCommit(commit.master_tree.items, List())
+    }
+  }
+
+
+  def logStat() = {
+    val commits = getAllCommits().reverse
+    commits.map(commit => printStat(commit, commits))
+  }
+
+  def printStat(commit: Commit, commits: List[Commit]) = {
+    //Print the log for the Commit
+    printCommitLog(commit)
+    //Print the stat for each commit
+    val parent = commits.find(item => item.id.equals(commit.parent_commit_id))
+    parent match {
+      case Some(par_commit: Commit) => Differ.statCommit(commit.master_tree.items, Some(par_commit.master_tree.items))
+      case None => Differ.statCommit(commit.master_tree.items, None)
     }
   }
 

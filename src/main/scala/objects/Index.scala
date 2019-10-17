@@ -14,6 +14,21 @@ case class Index(var entries: List[Entry] = List())
 
 object Index {
 
+  /**
+   * @param entries the new entries that are about to get commit
+   * @return true is the working tree is changed, false otherwise (working tree clean)
+   */
+  def entriesChanged(entries: List[Entry]): Boolean = {
+      Branch.getCurrentCommit() match {
+      case Some(commit: Commit) => {
+        val commit_blobs = Blob.getAllBlob(commit.master_tree.items).map(x => x.hash)
+        val entries_hashes = entries.map(x => x.hash)
+        entries_hashes.filter(entry => !commit_blobs.contains(entry)).nonEmpty
+      }
+      case None => true
+    }
+  }
+
   def clear(): Unit = {
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX", "")
   }
