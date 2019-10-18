@@ -4,6 +4,7 @@ import java.io.File
 import java.util.Calendar
 
 import objects.{Branch, Commit, Entry, Index, Stage, Tree}
+import utils.diff.Differ
 import utils.{IOManager, PathManager}
 
 import scala.annotation.tailrec
@@ -16,7 +17,6 @@ object Commit {
   /**
    * handles the sgit commit command.
    */
-    //TODO - show total insertions of the commit.
   def commit(): Unit = {
     val entries = Index.getIndexAsEntries().entries
     if(entries.isEmpty){
@@ -52,9 +52,15 @@ object Commit {
     // save into objects/commit
     new_commit.save()
     //change the ref in refs/heads/master
-    new_commit.set_current_commit()
+    new_commit.write_commit()
     //record the commit in the logs
     new_commit.record_in_logs()
+
+    val parent_commit = IOManager.getCommit(new_commit.parent_commit_id)
+    parent_commit match {
+      case Some(parent: Commit) =>println(s"[${Branch.getCurrentBranch().name} ${new_commit.id}]\n ${Differ.computeStatCommit(new_commit.master_tree.items, Some(parent.master_tree.items))}")
+      case None => println(s"[${Branch.getCurrentBranch().name} ${new_commit.id}]\n ${Differ.computeStatCommit(new_commit.master_tree.items, None)}")
+    }
     new_commit
   }
 

@@ -13,7 +13,7 @@ object Add {
       if(new File(path).exists()) {
           doAdd(path)
       }
-      else if (! evaluateRegex(path).isEmpty){
+      else if (evaluateRegex(path).nonEmpty){
         evaluateRegex(path).map(item => doAdd(item.pathAsString))
       } else {
         println(s"Error - File ${path} doesn't exist")

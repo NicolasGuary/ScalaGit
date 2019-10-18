@@ -4,16 +4,20 @@ import java.io.{BufferedWriter, File, FileWriter}
 import java.math.BigInteger
 import java.nio.file.{Files, Paths}
 import java.security.MessageDigest
+
 import scala.annotation.tailrec
 import better.files.{File => BFile}
-import objects.{Entry}
+import objects.{Commit, Entry, Tree}
 
 // TODO - clean unused methods that were implemented first because I thought they would be useful...
+// TODO - find code duplication
+// TODO - try to refactor IO
 
 // This is an utility class for writing and managing files and directories
 object IOManager {
 
-  var ignore: List[String]= List(".sgit", ".git", ".DS_Store", "project", ".idea", "target", "streams", "inputFileStamps")
+  //TODO - remove
+  val ignore: List[String]= List(".sgit", ".git", ".DS_Store", "project", ".idea", "target", "streams", "inputFileStamps")
 
   /**
    * Create a file with the name passed in parameters
@@ -65,12 +69,25 @@ object IOManager {
     readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}blobs${File.separator}${hash}"))
   }
 
-  def readCommit(hash: String): String = {
-    readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${hash}"))
+  def readCommit(hash: String): Option[String] = {
+    val file = new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${hash}")
+    if(!hash.isEmpty && file.exists()) Some(readFile(file))
+    else None
   }
 
-  def removeFile(file: File): Unit = {
-    Files.delete(Paths.get(file.getAbsolutePath))
+  def getCommit(hash: String): Option[Commit] = {
+    val content = IOManager.readCommit(hash)
+    content match {
+      case Some(item: String) => {
+        val commit = item.split("\n").map(x => x.split("_")).map(x => Commit(hash, new Tree(Tree.getTreeEntries(x(0)),x(0)), x(2), x(1), x(3))).toList
+        val res = commit.find(item => item.id.equals(hash))
+        res match {
+          case Some(result: Commit) => Some(result)
+          case None => None
+        }
+      }
+      case None => None
+    }
   }
 
   def fileExists(path: String): Boolean ={
@@ -80,34 +97,10 @@ object IOManager {
 
   //Returns all the files found in the current directory described by path
   //Returns an empty list if no elements found
-  //TODO - Maybe check if the path exists first
   def getAllFilesFromCurrentDirectory(path: String): List[File] = {
     val d = new File(path)
     if (d.exists && d.isDirectory) {
       d.listFiles.filter(_.isFile).toList
-    } else {
-      List[File]()
-    }
-  }
-
-  //Returns all the directories found in the current directory described by path
-  //Returns an empty list if no elements found
-  //TODO - Maybe check if the path exists first
-  def getAllDirectoriesFromCurrentDirectory(path: String): List[File] = {
-    val d = new File(path)
-    if (d.exists && d.isDirectory) {
-      d.listFiles.filter(_.isDirectory).toList
-    } else {
-      List[File]()
-    }
-  }
-
-  //Returns everything at root of the path. Does not explore the folders (not recursive)
-  //Returns an empty list if no elements found
-  def getAllFromCurrentDirectory(path: String): List[File] = {
-    val d = new File(path)
-    if (d.exists && d.isDirectory) {
-      d.listFiles.toList
     } else {
       List[File]()
     }

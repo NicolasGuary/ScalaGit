@@ -10,19 +10,6 @@ import utils.IOManager
  */
 case class Tree(var items: List[Entry] = List(), var id: String = "") {
 
-  def addElement(items: Entry): List[Entry] = {
-    Entry(items.content_type, items.hash, items.filepath, items.childpath) :: this.items
-  }
-
-  //TODO - Remove setters (not RT compliant)
-  def set_items (items: List[Entry]): Unit = {
-    this.items = items
-  }
-
-  def set_id (id: String): Unit = {
-    this.id = id
-  }
-
   def saveTreeFile(id: String, items: List[Entry]): Unit = {
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}tree${File.separator}${id}" , treeContent(items))
   }
@@ -61,10 +48,9 @@ object Tree {
 
   //Creates a new tree with a list of entries and save it in .sgit/object/tree
   def createTree(entries: List[Entry]): Tree = {
-    val tree = new Tree()
-    entries.map(element => tree.set_items(tree.addElement(element)))
-    val hash = tree.createTreeId(tree.items)
-    tree.set_id(hash)
+    val new_tree = new Tree(entries)
+    val hash = new_tree.createTreeId(new_tree.items)
+    val tree = new_tree.copy(id = hash)
     tree.saveTreeFile(tree.id, tree.items)
     tree
   }

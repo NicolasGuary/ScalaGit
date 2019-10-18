@@ -1,9 +1,8 @@
 package utils.scopt
 
-import java.io.File
-
 import actions._
 import scopt.OParser
+import utils.IOManager
 
 // Config stores arguments for the commands inputed
 // command stores the action asked by the user
@@ -133,52 +132,57 @@ object ScoptParser extends App {
 
   // OParser.parse returns Option[Config] => we need to check if we received Some(config) or None
   // Then we need to call the method corresponding to the arguments received
-  // TODO - Check if the .sgit directory exists before doing any command other that init !
   OParser.parse(parser, args, Config()) match {
     case Some(config) => {
       config.command match {
         case "init" => {
           Init.init()
         }
-        case "add" => {
-          Add.add(config.files)
-        }
-        case "commit" => {
-          Commit.commit()
-        }
-        case "branch" => {
-          if (config.showAllBranches || config.verbose)
-            Branch.branchAllVerbose()
-          else Branch.branch(config.branchName)
-        }
-        case "log" => {
-          if(config.patch){
-            Log.logPatch()
-          } else if(config.stat) {
-            Log.logStat()
-          } else {
-              Log.log()
-            }
-        }
-        case "tag" =>
-          if (config.tagName.isEmpty)Tag.listAllTags()
-          else Tag.tag(config.tagName)
-        case "status" => {
-          Status.status()
-        }
-        case "diff" => {
-          Diff.diff()
-        }
-        case "checkout" => {
-          Checkout.checkout(config.checkoutBranch)
-        }
         case _ => {
-          //Check if .sgit exists, if yes do the command, else throw an error because it's not an sgit repo
-          println(s"config reçue =  ${config} avec ${args.map(x => println(x))}")
+          IOManager.getRepoDirPath() match {
+            case Some(sgitPath: String) =>{
+              config.command match {
+                case "add" => {
+                  Add.add(config.files)
+                }
+                case "commit" => {
+                  Commit.commit()
+                }
+                case "branch" => {
+                  if (config.showAllBranches || config.verbose)
+                    Branch.branchAllVerbose()
+                  else Branch.branch(config.branchName)
+                }
+                case "log" => {
+                  if(config.patch){
+                    Log.logPatch()
+                  } else if(config.stat) {
+                    Log.logStat()
+                  } else {
+                    Log.log()
+                  }
+                }
+                case "tag" =>
+                  if (config.tagName.isEmpty) Tag.listAllTags()
+                  else Tag.tag(config.tagName)
+                case "status" => {
+                  Status.status()
+                }
+                case "diff" => {
+                  Diff.diff()
+                }
+                case "checkout" => {
+                  Checkout.checkout(config.checkoutBranch)
+                }
+                case _ => println("Your argument did not match with an existing one. Run sgit --help for more informations.")
+              }
+            }
+            case None => println("fatal - not a sgit repository.")
+          }
         }
+
       }
     }
-    case _ =>
-      println("Your argument did not match with an existing one. Run sgit --help for more informations.")
+    case _ => println("Your argument did not match with an existing one. Run sgit --help for more informations.")
   }
 }

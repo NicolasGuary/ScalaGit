@@ -29,7 +29,7 @@ case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var pa
     IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${this.id}" , commitContent())
   }
 
-  def set_current_commit(): Unit = {
+  def write_commit(): Unit = {
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${Branch.getCurrentBranch().name}", this.id)
   }
 
