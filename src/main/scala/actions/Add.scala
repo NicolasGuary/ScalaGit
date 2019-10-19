@@ -7,6 +7,10 @@ import better.files.{File => BFile}
 
 object Add {
 
+  /**
+   * Applies the add method to each path in argument
+   * @param paths all the paths received in argument
+   */
   def add(paths: Seq[String]): Unit = {
     println("Adding files...")
     paths.map(path =>
@@ -20,6 +24,10 @@ object Add {
       })
   }
 
+  /**
+   * Handles the add
+   * @param path
+   */
   def doAdd(path: String): Unit = {
     val file = new File(path)
     if (file.isDirectory){

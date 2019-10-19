@@ -6,6 +6,9 @@ import utils.IOManager
 import java.io.File
 object Status {
 
+  /**
+   * displays the status
+   */
   def status(): Unit = {
     val index = Index.getIndexAsEntries().entries
     val stage = Stage.getStageAsEntries().entries
@@ -21,19 +24,25 @@ object Status {
     untracked(working_directory, stage)
   }
 
-
+  /**
+   * Shows the changes to commit
+   * @param index current INDEX
+   * @param stage current STAGE
+   */
   def changesToCommit(index: List[Entry], stage: List[Entry]): Unit = {
-    //TODO - new file not detected because when added the file goes straight into the stage
-    //In the index, when adding, check if the file is also in the stage. If yes it's modified, otherwise it's new.
     println("Changes to be committed:")
     index
       .filter(entry => !stage.contains(entry))
-      .map(entry => println(s"   ${GREEN}new file: ${entry.getFileName()}${RESET}"))
-    index
-      .filter(entry => stage.contains(entry))
-      .map(entry => println(s"    ${GREEN}modified: ${entry.getFileName()}${RESET}"))
+      .map(entry => println(s"   ${GREEN}${entry.getFileName()}${RESET}"))
+
   }
 
+  /**
+   * displays changes not staged
+   * @param working_directory
+   * @param stage
+   * @return
+   */
   def notStaged(working_directory: List[Entry], stage: List[Entry]) = {
     println("Changes not staged for commit:\n  (use \"sgit add <file>...\" to update what will be committed)")
     val hashes = stage.map(x => x.hash)

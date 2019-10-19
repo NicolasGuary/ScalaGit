@@ -7,16 +7,11 @@ import java.security.MessageDigest
 
 import scala.annotation.tailrec
 import better.files.{File => BFile}
-import objects.{Commit, Entry, Tree}
-
-// TODO - clean unused methods that were implemented first because I thought they would be useful...
-// TODO - find code duplication
-// TODO - try to refactor IO
+import objects.{Branch, Commit, Entry, Tree}
 
 // This is an utility class for writing and managing files and directories
 object IOManager {
 
-  //TODO - remove
   val ignore: List[String]= List(".sgit", ".git", ".DS_Store", "project", ".idea", "target", "streams", "inputFileStamps")
 
   /**
@@ -73,6 +68,12 @@ object IOManager {
     val file = new File(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${hash}")
     if(!hash.isEmpty && file.exists()) Some(readFile(file))
     else None
+  }
+
+  def readLog(): Option[List[Commit]] = {
+    val content = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}"))
+    if(content.isEmpty) None
+    else Some(content.split("\n").map(x => x.split("_")).map(x => Commit(x(0), new Tree(Tree.getTreeEntries(x(1)),x(1)), x(2), x(3), x(4))).toList)
   }
 
   def getCommit(hash: String): Option[Commit] = {

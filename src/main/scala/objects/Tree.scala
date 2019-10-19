@@ -27,6 +27,9 @@ case class Tree(var items: List[Entry] = List(), var id: String = "") {
 }
 
 object Tree {
+  def apply(): Tree = {
+    new Tree
+  }
 
   /**
    * @param hash the hash for the Tree
@@ -42,11 +45,11 @@ object Tree {
     entries
   }
 
-  def apply(): Tree = {
-    new Tree
-  }
-
-  //Creates a new tree with a list of entries and save it in .sgit/object/tree
+  /**
+   * Creates a new tree with a list of entries and save it in .sgit/object/tree
+   * @param entries
+   * @return the new Tree made from the entries
+   */
   def createTree(entries: List[Entry]): Tree = {
     val new_tree = new Tree(entries)
     val hash = new_tree.createTreeId(new_tree.items)

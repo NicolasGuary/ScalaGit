@@ -10,6 +10,10 @@ import Console.{GREEN, RESET}
 object Branch {
 
 
+  /**
+   * Creates a new branch
+   * @param name the branch name to create
+   */
   def branch(name: String): Unit = {
     val new_branch = s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}$name"
     println(s"created new branch $name")
@@ -22,7 +26,7 @@ object Branch {
 
   /**
    * Lists all the branches created, display the current branch and the latest commit hash for each branch
-   * TODO - Add all the tags
+   * Also displays all the tags created
    */
   def branchAllVerbose(): Unit = {
     val branches = IOManager.getAllFilesFromCurrentDirectory(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads")
@@ -31,6 +35,6 @@ object Branch {
     } else {
       println(s"${branch.getName} ${IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${branch.getName}"))}")
     })
+    Tag.listAllTags()
   }
-
 }

@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scopt_2.13-4.0.0-RC2.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: better-files_2.13-3.8.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scopt_2.13-4.0.0-RC2.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scalactic_2.13-3.0.8.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-reflect-2.13.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncluding from cache: scala-library-2.13.1.jar[0m
@@ -8,7 +8,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mMerging files...[0m
 [0m[[0m[0mdebug[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[0minfo[0m] [0m[0mStrategy 'discard' was applied to a file (Run the task at debug level to see details)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 989af88dd417f4dd6cec3870d18c0fad4a7cdf68[0m
+[0m[[0m[0mdebug[0m] [0m[0mSHA-1: 45f9bfd11aeb301b96635fe82412878007b6492c[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /Users/Nico/IdeaProjects/Final/ScalaGit/target/scala-2.13/SGit-assembly-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LICENSE_scala-library-2.13.1[0m

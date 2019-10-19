@@ -2,11 +2,9 @@ package actions
 
 import java.io.File
 import java.util.Calendar
-
 import objects.{Branch, Commit, Entry, Index, Stage, Tree}
 import utils.diff.Differ
 import utils.{IOManager, PathManager}
-
 import scala.annotation.tailrec
 
 object Commit {

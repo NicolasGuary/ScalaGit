@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/objects/Branch.scala:29:44: value split is not a member of Option[String][0m
-[0m[[0m[31merror[0m] [0m[0m        val commit = commit_content_string.split("\n").map(x => x.split("_")).map(x => Commit(hash, new Tree(Tree.getTreeEntries(x(0)),x(0)), x(2), x(1), x(3)))[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Log.scala:17:33: value reverse is not a member of Option[List[objects.Commit]][0m
+[0m[[0m[31merror[0m] [0m[0m    commitContentForLog(commits.reverse)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Log.scala:24:35: value reverse is not a member of Option[List[objects.Commit]][0m
+[0m[[0m[31merror[0m] [0m[0m    val commits = getAllCommits().reverse[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Nico/IdeaProjects/Final/ScalaGit/src/main/scala/actions/Log.scala:33:35: value reverse is not a member of Option[List[objects.Commit]][0m
+[0m[[0m[31merror[0m] [0m[0m    val commits = getAllCommits().reverse[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

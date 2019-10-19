@@ -38,7 +38,6 @@ object Blob {
     }
   }
 
-
   /**
    * @param entries a list of entries, either blobs or trees
    * @return a list of Entry object refering to all the blobs pointed by the list of entries

@@ -7,7 +7,10 @@ import better.files.{File => BFile}
 
 object PathManager {
 
-  //Returns the parent path for the current path
+  /**
+   * @param path
+   * @return the parent path for the current path
+   */
   def getParentPath(path: String): Option[String] = {
     val pathSplit = path.split("/")
     if(pathSplit.length <= 1){

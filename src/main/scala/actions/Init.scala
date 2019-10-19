@@ -5,10 +5,10 @@ import java.io.File
 import utils.IOManager
 
 object Init{
-
-  //Initialize a new .sgit directory at the current location
-  //Skips the initialization if a .sgit directory already exists at the current location
-
+  /**
+   * Initialize a new .sgit directory at the current location
+   * Skips the initialization if a .sgit directory already exists at the current location
+   */
   def init(): Unit = {
 
     val listOfDirectories: List[String] = List(

@@ -29,30 +29,51 @@ object Index {
     }
   }
 
+  /**
+   * Clear all entries from the INDEX
+   */
   def clear(): Unit = {
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX", "")
   }
 
+  /**
+   * Add an entry into the index
+   * @param entry
+   * @param index
+   * @return
+   */
   def addEntry(entry: Entry, index: Index): Index = {
     val newEntries = entry +: index.entries
     val newIndex = index.copy(entries = newEntries)
     newIndex
   }
 
-  //Returns a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
+  /**
+   * Returns a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
+   * @param new_entry
+   * @param current_stage
+   * @return
+   */
   def updateEntry(new_entry: Entry, current_stage: Index): Index = {
     val filtered_entries = current_stage.entries.filter(entry => !entry.filepath.equals(new_entry.filepath))
     val new_entries = filtered_entries :+ new_entry
     new Index(new_entries)
   }
 
-  //Tells if the path is already in the index
+  /**
+   * Tells if the path is already in the index
+   * @param entry
+   * @param current_index
+   * @return
+   */
   def pathStaged(entry: Entry, current_index: Index): Boolean = {
     val res = current_index.entries.filter(x => x.filepath.equals(entry.filepath))
     res.nonEmpty
   }
 
-  //Returns the index as a list of Entries
+  /**
+   * @return the index as a list of Entries
+   */
   def getIndexAsEntries(): Index = {
     val index = new File(s"${IOManager.getRepoDirPath().get}${File.separator}INDEX")
     val res = new String(Files.readAllBytes(Paths.get(index.getAbsolutePath)))

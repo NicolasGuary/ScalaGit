@@ -13,30 +13,51 @@ case class Stage(var entries: List[Entry] = List())
 
 object Stage {
 
+  /**
+   * clears the stage
+   */
   def clear(): Unit = {
     IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}STAGE", "")
   }
 
-
+  /**
+   * Add entry to the stage
+   * @param entry
+   * @param stage
+   * @return
+   */
   def addEntry(entry: Entry, stage: Stage): Stage = {
     val newEntries = entry +: stage.entries
     val newStage = stage.copy(entries = newEntries)
     newStage
   }
 
-  //Return true if the stage already contains an entry with the same path and the same hash
+  /**
+   *
+   * @param entry
+   * @return true if the stage already contains an entry with the same path and the same hash
+   */
   def alreadyStaged(entry: Entry): Boolean = {
     val stage = Stage.getStageAsEntries()
     stage.entries.contains(entry)
   }
 
-  //Tells if the path is already in the stage
+  /**
+   * Tells if the path is already in the stage
+   * @param entry
+   * @param current_stage
+   * @return
+   */
   def pathStaged(entry: Entry, current_stage: Stage): Boolean = {
     val res = current_stage.entries.filter(x => x.filepath.equals(entry.filepath))
     res.nonEmpty
   }
 
-  //Returns a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
+  /**
+   * @param new_entry
+   * @param current_stage
+   * @return  a stage with the same entries, excepted the entries with the same path as new_entry that should be updated
+   */
   def updateEntry(new_entry: Entry, current_stage: Stage): Stage = {
     val filtered_entries = current_stage.entries.filter(entry => !entry.filepath.equals(new_entry.filepath))
     val new_entries = filtered_entries :+ new_entry
@@ -44,7 +65,6 @@ object Stage {
   }
 
   /**
-   *
    * @return the stage as a list of Entries
    */
   def getStageAsEntries(): Stage = {

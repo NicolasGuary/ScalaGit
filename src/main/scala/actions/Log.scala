@@ -1,23 +1,41 @@
 package actions
 
-import java.io.File
 
 import Console.{RESET, YELLOW}
-import objects.{Commit, Tree, Branch}
+import objects.Commit
 import utils.IOManager
 import utils.diff.Differ
 
 object Log {
 
+  /**
+   * handles the log command
+   */
   def log() = {
-    val commits = getAllCommits()
-    commitContentForLog(commits.reverse)
+    getAllCommits() match {
+      case Some(commits: List[Commit]) => commitContentForLog(commits.reverse)
+      case None => println("No logs to display - You should commit first.")
+    }
   }
 
+  /**
+   * handles the log patch command
+   */
   def logPatch() = {
-    val commits = getAllCommits().reverse
-    //Print the patch between the files from the Commit and his parent Commit
-    commits.map(commit => printPatch(commit, commits))
+    getAllCommits() match {
+      case Some(commits: List[Commit]) => commits.reverse.map(commit => printPatch(commit, commits))
+      case None => println("No logs to display - You should commit first.")
+    }
+  }
+
+  /**
+   * handles the log stat command
+   */
+  def logStat() = {
+    getAllCommits() match {
+      case Some(commits: List[Commit]) => commits.reverse.map(commit => printStat(commit, commits))
+      case None => println("No logs to display - You should commit first.")
+    }
   }
 
   /**
@@ -25,7 +43,6 @@ object Log {
    * @param commits
    * @return
    */
-    //TODO - refactor with Option and pattern matching in Differ
   def printPatch(commit: Commit, commits: List[Commit]) = {
     //Print the log for the Commit
     printCommitLog(commit)
@@ -38,12 +55,11 @@ object Log {
     }
   }
 
-
-  def logStat() = {
-    val commits = getAllCommits().reverse
-    commits.map(commit => printStat(commit, commits))
-  }
-
+  /**
+   * Prints the stat
+   * @param commit
+   * @param commits
+   */
   def printStat(commit: Commit, commits: List[Commit]) = {
     //Print the log for the Commit
     printCommitLog(commit)
@@ -55,15 +71,25 @@ object Log {
     }
   }
 
-  def getAllCommits(): List[Commit] = {
-    val content = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}"))
-    content.split("\n").map(x => x.split("_")).map(x => Commit(x(0), new Tree(Tree.getTreeEntries(x(1)),x(1)), x(2), x(3), x(4))).toList
+  /**
+   * @return all the commits from the current branch as a list of Commit
+   */
+  def getAllCommits(): Option[List[Commit]] = {
+    IOManager.readLog()
   }
 
+  /**
+   * prints the content of a list of commits
+   * @param commits
+   */
   def commitContentForLog(commits: List[Commit]): Unit = {
     commits.map(x => printCommitLog(x))
   }
 
+  /**
+   * prints the log for a commit
+   * @param commit
+   */
   def printCommitLog(commit: Commit) = {
     println(s"${YELLOW}commit: ${commit.id}${RESET}\ntree: ${commit.master_tree.id}\nauthor: ${commit.author}\nparent: ${commit.parent_commit_id}\ntimestamp: ${commit.timestamp}\n")
   }

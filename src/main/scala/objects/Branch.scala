@@ -5,25 +5,38 @@ import utils.IOManager
 
 /**
  *
- * @param name
+ * @param name the name of the branch
  */
 case class Branch (name: String)
 
 object Branch {
+  /**
+   *
+   * @return the current Branch
+   */
   def getCurrentBranch(): Branch = {
     val heads = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}HEAD"))
     new Branch(new File(heads).getName)
   }
 
+  def getAllExistingBranches(): List[Branch] = {
+    val branches = IOManager.getAllFilesFromCurrentDirectory(s".sgit${File.separator}refs${File.separator}heads")
+    branches.map(x => new Branch(x.getName))
+  }
+  /**
+   * @return the current commit hash or None if no current commit
+   */
   def getCurrentCommitHash(): Option[String] = {
     val branch_path = new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads${File.separator}${getCurrentBranch().name}")
     val commit_hash = IOManager.readFile(branch_path)
     IOManager.readCommit(commit_hash)
   }
 
+  /**
+   * @return the current commit or None
+   */
   def getCurrentCommit(): Option[Commit]= {
-    val current_hash = getCurrentCommitHash()
-    current_hash match {
+    getCurrentCommitHash() match {
       case Some(hash: String) => {
         IOManager.readCommit(hash) match {
           case Some(current_commit: String) => {
