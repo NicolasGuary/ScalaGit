@@ -34,7 +34,7 @@ case class Commit(var id: String ="", var master_tree: Tree = new Tree(), var pa
    * write the commit into the .sgit directory
    */
   def save(): Unit = {
-    IOManager.overwriteFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${this.id}" , commitContent())
+    IOManager.writeFile(s"${IOManager.getRepoDirPath().get}${File.separator}objects${File.separator}commit${File.separator}${this.id}" , commitContent())
   }
 
   /**
