@@ -1,3 +1,4 @@
+//TODO - This class is conflicting with IntelliJ and won't let the JAR compile...
 /*import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
 import utils.PathManager
 import objects.Entry
