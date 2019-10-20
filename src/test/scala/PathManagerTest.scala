@@ -1,4 +1,4 @@
-import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
+/*import org.scalatest.{BeforeAndAfter, FunSpec, GivenWhenThen, Matchers, Outcome}
 import utils.PathManager
 import objects.Entry
 
@@ -44,3 +44,4 @@ class PathManagerTest extends FunSpec with Matchers with GivenWhenThen with Befo
 
 
 }
+*/
