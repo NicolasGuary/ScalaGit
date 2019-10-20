@@ -73,7 +73,11 @@ object IOManager {
   def readLog(): Option[List[Commit]] = {
     val content = IOManager.readFile(new File(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}logs${File.separator}${Branch.getCurrentBranch().name}"))
     if(content.isEmpty) None
-    else Some(content.split("\n").map(x => x.split("_")).map(x => Commit(x(0), new Tree(Tree.getTreeEntries(x(1)),x(1)), x(2), x(3), x(4))).toList)
+    else {
+      Some(content.split("\n").map(x => x.split("_"))
+        .filter(x => !x(0).isEmpty)
+        .map(x => Commit(x(0), new Tree(Tree.getTreeEntries(x(1)),x(1)), x(2), x(3), x(4))).toList)
+    }
   }
 
   def getCommit(hash: String): Option[Commit] = {
