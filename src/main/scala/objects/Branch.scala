@@ -20,7 +20,7 @@ object Branch {
   }
 
   def getAllExistingBranches(): List[Branch] = {
-    val branches = IOManager.getAllFilesFromCurrentDirectory(s".sgit${File.separator}refs${File.separator}heads")
+    val branches = IOManager.getAllFilesFromCurrentDirectory(s"${IOManager.getRepoDirPath().get}${File.separator}refs${File.separator}heads")
     branches.map(x => new Branch(x.getName))
   }
   /**
