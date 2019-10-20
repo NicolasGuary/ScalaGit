@@ -1,8 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mStageTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mIf you try to get the STAGE [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  and the STAGE is empty[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get an empty stage[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  and the STAGE contains one element[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m  - you should get a stage with 1 entry[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mIf you try to add a new entry to an empty STAGE [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- you should get one entry in the stage[0m[0m
