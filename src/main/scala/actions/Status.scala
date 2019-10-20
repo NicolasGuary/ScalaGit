@@ -16,11 +16,8 @@ object Status {
     val working_directory = IOManager.exploreDirectoryAsEntries(new File(IOManager.getRepoDirPath().get).getParentFile)
 
     println(s"On branch ${Branch.getCurrentBranch().name}")
-
     changesToCommit(index, stage)
-
     notStaged(working_directory, stage)
-
     untracked(working_directory, stage)
   }
 
@@ -31,14 +28,17 @@ object Status {
    */
   def changesToCommit(index: List[Entry], stage: List[Entry]): Unit = {
     println("Changes to be committed:")
+    val hashes = stage.map(x => x.hash)
+    val paths = stage.map(x => x.filepath)
     index
-      .filter(entry => !stage.contains(entry))
-      .map(entry => println(s"   ${GREEN}${entry.getFileName()}${RESET}"))
+      .filter(entry => hashes.contains(entry.hash))
+      .filter(x => paths.contains(x.filepath))
+      .map(entry => println(s"   ${GREEN}${entry.filepath}${RESET}"))
 
   }
 
   /**
-   * displays changes not staged
+   * Displays changes not staged
    * @param working_directory
    * @param stage
    * @return
@@ -48,14 +48,22 @@ object Status {
     val hashes = stage.map(x => x.hash)
     val paths = stage.map(x => x.filepath)
     working_directory
-      .filter(entry => paths.contains(entry.getFileName()) && !hashes.contains(entry.hash))
-      .map(entry => println(s"   ${RED}modified: ${entry.getFileName()}${RESET}"))
+      .filter(entry => !hashes.contains(entry.hash))
+      .filter(x => paths.contains(x.filepath))
+      .map(entry => println(s"   ${RED}modified: ${entry.filepath}${RESET}"))
   }
 
+  /**
+   * Displays all the files not added in the STAGE
+   * @param working_directory
+   * @param stage
+   * @return
+   */
   def untracked(working_directory: List[Entry], stage: List[Entry]) = {
     println("Untracked files:\n  (use \"sgit add <file>...\" to include in what will be committed)")
+    val paths = stage.map(x => x.filepath)
     working_directory
-      .filter(entry => !stage.contains(entry))
+      .filter(entry => !paths.contains(entry.filepath))
       .map(entry => println(s"   ${RED}${entry.filepath}${RESET}"))
   }
 }
